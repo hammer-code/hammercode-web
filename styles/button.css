@@ -1,0 +1,8 @@
+.btn {
+  border: 0;
+  @apply px-3 py-2;
+  @apply text-lg;
+  @apply bg-secondary;
+  @apply rounded;
+  @apply text-white;
+}
