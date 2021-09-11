@@ -2,7 +2,45 @@
   border: 0;
   @apply px-3 py-2;
   @apply text-lg;
+  @apply bg-gray-300;
+  @apply rounded-full;
+  @apply text-black;
+  @apply inline-block;
+  transition: all .3s ease;
+}
+
+.link {
+  background: transparent;
+  border: none;
+  transition: all ease .3s;
+}
+
+.link:hover {
+  @apply text-secondary;
+}
+
+.btn--lg {
+  @apply text-xl;
+  @apply px-4 py-3;
+}
+
+.btn--secondary {
   @apply bg-secondary;
+  @apply text-white;
+}
+
+.btn--primary {
+  @apply bg-primary;
+  @apply text-white;
+}
+
+.btn--black {
+  @apply bg-black;
+  @apply text-white;
+}
+
+.btn--discord {
   @apply rounded;
   @apply text-white;
+  background: #535fee;
 }

@@ -1,12 +1,8 @@
+.img-logo {
+  width: 180px;
+}
+
 .header {
   @apply py-4;
   @apply border-b;
-}
-
-.discordButton {
-  @apply px-4 py-3;
-  @apply rounded;
-  @apply text-white;
-  @apply border-0;
-  background: #535fee;
 }

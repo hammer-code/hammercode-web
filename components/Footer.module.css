@@ -1,3 +1,4 @@
 .footer {
-  @apply border-t py-4;
+  @apply border-t py-12;
+  @apply border-dashed;
 }

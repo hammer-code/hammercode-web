@@ -9,13 +9,13 @@ export default function Header () {
           <div>
             <Link href="/">
               <a>
-                <img src="/h-logo.svg" />
+                <img className={styles['img-logo']} src="/h-logo.svg" />
               </a>
             </Link>
           </div>
 
           <div>
-            <a className={styles.discordButton} target="_blank" href="https://discord.com/invite/M9mNK6MBbu">Gabung Discord</a>
+            {/* to be filled in later */}
           </div>
         </div>
       </div>
