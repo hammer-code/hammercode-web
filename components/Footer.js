@@ -1,4 +1,4 @@
-import { whatsappLink } from '../lib/url';
+import { whatsappLink, whatsappNo } from '../lib/url';
 import styles from './Footer.module.css';
 
 export default function Footer () {
@@ -20,7 +20,7 @@ export default function Footer () {
         <h2 className="text-lg font-bold mb-4">Kontak</h2>
           <ul>
             <li>
-              <a className="text-secondary underline" href={whatsappLink} target="_blank">Whatsapp +62 822-9167-6911</a>
+              <a className="text-secondary underline" href={whatsappLink} target="_blank">Whatsapp {whatsappNo}</a>
             </li>
           </ul>
 

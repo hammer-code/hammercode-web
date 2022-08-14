@@ -1,12 +1,9 @@
 module.exports = {
-  purge: [
-    './components/**/*.html',
-    './components/**/*.jsx',
-    './components/**/*.js',
-    './pages/**/*.html',
-    './pages/**/*.jsx',
-    './pages/**/*.js',
+  content: [
+    "./pages/**/*.{html,js,jsx,ts,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  plugins: [],
   theme: {
     fontFamily: {
       display: ['DM Sans', 'sans-serif'],
