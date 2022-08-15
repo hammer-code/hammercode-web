@@ -17,14 +17,13 @@ function HeroSection () {
 
   return (
     <section className="bg-secondary">
-      <div className="container mx-auto py-8">
-        <div className="flex">
+      <div className="container mx-auto py-16">
+        <div className="flex px-4">
           <div className="flex-1 py-16">
             <h1 className="text-white mb-4 font-bold text-4xl">{t('title')}</h1>
             <p className="text-2xl mb-4 text-white">{t('sub-title')}</p>
             <a className="btn btn--lg btn--black transition-all ease duration-300 hover:bg-white hover:text-black" target="_blank" href="https://discord.com/invite/M9mNK6MBbu">{t('join-cta')}</a>
           </div>
-          <div className="flex-1" />
         </div>
       </div>
     </section>
@@ -36,11 +35,11 @@ function AboutUsSection () {
     <section>
       <div className="container mx-auto">
         <div className="py-12">
-          <div className="flex">
-            <div className="flex-1">
+          <div className="flex flex-col md:flex-row">
+            <div className="flex-1 px-4">
 
             </div>
-            <div className="flex-1">
+            <div className="flex-1 px-4">
               <p className="text-hc-green text-lg mb-5 font-bold">Siapa Kami</p>
               <h2 className="text-4xl font-bold mb-4">Komunitas Untuk Memajukan Daerah</h2>
               <p className="text-xl text-gray-700">Hammercode adalah sebuah komunitas teknologi yang diinisiasi sebagai wadah berkumpulnya para pembelajar, programmer, web/mobile developer, dan pelaku industri teknologi lainnya yang berada di kota Palu dan sekitarnya. Kegiatan-kegiatan yang Kami selenggarakan berorientasi pada <i>knowledge-transfer</i> yang diharapkan dapat mempercepat pemerataan keterampilan di bidang teknologi informasi serta mencetak talenta teknologi yang siap kerja. Hammercode tempat yang cocok untukmu yang ingin belajar tentang <i>coding</i>/pemograman dan <i>software engineering</i>.</p>
@@ -57,9 +56,11 @@ function ProgramsSection () {
     <section>
       <div className="container mx-auto">
         <div className="py-12">
-        <p className="text-hc-green text-lg mb-5 font-bold">Program</p>
-          <h2 className="text-3xl font-bold mb-8">Kegiatan Bermanfaat dan Gratis*</h2>
-          <div className="flex">
+          <div className="px-6">
+            <p className="text-hc-green text-lg mb-5 font-bold">Program</p>
+            <h2 className="text-3xl font-bold mb-8">Kegiatan Bermanfaat dan Gratis*</h2>
+          </div>
+          <div className="flex flex-col md:flex-row">
             <div className={style['program-card-wrapper']}>
               <div className={style['program-card']}>
                 <h3 className="font-bold text-2xl mb-4">Mentoring</h3>
@@ -95,21 +96,21 @@ function MentorsSection () {
   return (
     <section className="bg-secondary">
       <div className="container mx-auto">
-        <div className="py-12 text-center">
+        <div className="py-32 text-center">
           <h2 className="text-white text-3xl font-bold mb-4">Belajar Dari Ekspert Teknologi</h2>
-          <p className="text-white text-xl">Ambil kesempatan untuk belajar dari ekspert dari perusahaan teknologi</p>
-          <div className="flex justify-center mt-6">
-            <div className="logo-wrapper">
-              <img src="/shipper.svg" />
+          <p className="text-white text-xl mb-8">Ambil kesempatan untuk belajar dari ekspert dari perusahaan teknologi</p>
+          <div className="flex flex-col md:flex-row justify-center mt-6">
+            <div className="logo-wrapper inline-block mb-2">
+              <img src="/shipper.svg" className="inline-block" />
             </div>
-            <div className="logo-wrapper">
-              <img src="/tkp.svg" />
+            <div className="logo-wrapper inline-block mb-2">
+              <img src="/tkp.svg" className="inline-block" />
             </div>
-            <div className="logo-wrapper">
-              <img src="/eshos.png" />
+            <div className="logo-wrapper inline-block mb-2">
+              <img src="/eshos.png" className="inline-block" />
             </div>
-            <div className="logo-wrapper">
-              <img src="/warpin.png" />
+            <div className="logo-wrapper inline-block mb-2">
+              <img src="/warpin.png" className="inline-block" />
             </div>
           </div>
         </div>
@@ -146,16 +147,18 @@ function TestimonySection () {
     <section>
       <div className="container mx-auto">
         <div className="py-12">
-          <p className="text-hc-green text-lg mb-5 font-bold">Our Impact</p>
-          <h2 className="text-3xl font-bold mb-6">Beberapa Teman Yang Merasakan Manfaat</h2>
-          <div className="flex">
-            <div className="flex-1 mr-2 text-gray-700">
+          <div className="px-4 mb-12">
+            <p className="text-hc-green text-lg mb-5 font-bold">Our Impact</p>
+            <h2 className="text-3xl font-bold mb-6">Beberapa Teman Yang Merasakan Manfaat</h2>
+          </div>
+          <div className="flex flex-col justify-between md:flex-row">
+            <div className="flex-1 mb-4 px-4">
               <TestimonyCard {...testimonies[0]} />
             </div>
-            <div className="flex-1 mx-2">
+            <div className="flex-1 mb-4 px-4">
               <TestimonyCard {...testimonies[1]} />
             </div>
-            <div className="flex-1 ml-2">
+            <div className="flex-1 px-4">
               <TestimonyCard {...testimonies[2]} />
             </div>
           </div>
