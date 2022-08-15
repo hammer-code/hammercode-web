@@ -1,9 +1,15 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 import style from './index.module.css';
-import { whatsappLink } from '../lib/url';
+import { whatsappLink } from '@core/lib/url';
+import MainLayout from '@core/layout/MainLayout';
+
+interface Testimony {
+  text: string,
+  name: string,
+  school: string,
+  title?: string
+}
 
 function HeroSection () {
   return (
@@ -109,12 +115,14 @@ function MentorsSection () {
   );
 }
 
+type TestimonyCard = Testimony;
+
 function TestimonyCard ({
   text,
   name,
   school = '',
   title = '',
-}) {
+}: TestimonyCard) {
   return (
     <div className="text-gray-700">
       <p className="mb-4 text-lg font-bold"><span>&rdquo;</span>{text}</p>
@@ -126,7 +134,7 @@ function TestimonyCard ({
 }
 
 function TestimonySection () {
-  const testimonies = [
+  const testimonies: Testimony[] = [
     { name: 'Agi', school: 'Universitas Tadulako \'17', text: 'hammercode komunitas nya friendly banget, baik mentor, dan peserta pelajarnya. Kelas  di hammercode jg itu sangat seru, metode mengajar para mentornya sangat membntu, dijamin paham 1000%' },
     { name: 'Zulnabil', school: 'Universitas Tadulako \'16', title: 'Frontend Engineer @ 99.co', text: 'As a software engineer or who wants to, prepare yourself to face the real IT industry. Since studying from college is not enough, you have to find your mentor. In hammercode you can find it, and expand your network. Because your network is your net worth' },
     { name: 'Akwan', school: 'Universitas Tadulako \'19', title: 'Backend Engineer Intern @ Bareksa', text: 'Dengan bantuan dan dorongan teman-teman dan mentor yg ada di komunitas, saya berhasil mendapatkan kesempatan magang di tahun pertama dan kedua kuliah' },
@@ -170,11 +178,10 @@ function ContactUsSection () {
 
 export default function Home () {
   return (
-    <>
+    <MainLayout>
       <Head>
         <title>Hammercode - Komunitas programmer, web/mobile software developer, praktisi IT kota Palu</title>
       </Head>
-      <Header />
       <main>
         <HeroSection />
         <AboutUsSection />
@@ -183,7 +190,6 @@ export default function Home () {
         <TestimonySection />
         <ContactUsSection />
       </main>
-      <Footer />
-    </>
+    </MainLayout>
   );
 }

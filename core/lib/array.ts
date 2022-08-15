@@ -3,7 +3,7 @@
  * @param {number} by
  * @returns
  */
-export function rotateElements (array, by = 1) {
+export function rotateElements (array: Array<any>, by = 1) {
   const left = array.slice(0, by)
   const right = array.slice(by)
   return [...right, ...left];
