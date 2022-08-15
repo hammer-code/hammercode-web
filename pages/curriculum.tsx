@@ -8,6 +8,13 @@ export default function CurriculumPage() {
       <p>Frontend Web Developer</p>
       <p>Backend Web Developer</p>
       <p>Android Developer</p>
+
+      <section>
+        <h2>Mentors</h2>
+
+        <p>John Doe</p>
+        <p>Mark</p>
+      </section>
     </MainLayout>
   );
 }

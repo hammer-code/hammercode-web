@@ -43,8 +43,9 @@ export default function Header () {
             <ul className="flex">
               <li className="inline-block px-2 mr-2"><NavLink href="/about"><a>{t('about')}</a></NavLink></li>
               <li className="inline-block px-2"><a href="https://medium.com/hammercode" target="_blank">Blog</a></li>
-              <li className="inline-block px-2 mr-2"><NavLink href="/curriculum"><a>{t('curriculum')}</a></NavLink></li>
-              <li className="inline-block px-2"><NavLink href="/sponsorship"><a>{t('support-us')}</a></NavLink></li>
+              {/* <li className="inline-block px-2 mr-2"><NavLink href="/curriculum"><a>{t('curriculum')}</a></NavLink></li>
+              <li className="inline-block px-2"><NavLink href="/sponsorship"><a>{t('support-us')}</a></NavLink></li> */}
+              <span className="px-3">|</span>
               <LocaleSwitcher />
             </ul>
           </div>

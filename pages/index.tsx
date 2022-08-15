@@ -3,6 +3,7 @@ import Head from 'next/head';
 import style from './index.module.css';
 import { whatsappLink } from '@core/lib/url';
 import MainLayout from '@core/layout/MainLayout';
+import { useTranslations } from 'next-intl';
 
 interface Testimony {
   text: string,
@@ -12,14 +13,16 @@ interface Testimony {
 }
 
 function HeroSection () {
+  const t = useTranslations('home');
+
   return (
     <section className="bg-secondary">
       <div className="container mx-auto py-8">
         <div className="flex">
           <div className="flex-1 py-16">
-            <h1 className="text-white mb-4 font-bold text-4xl">Mencetak Talenta Teknologi Lokal, Berdaya Saing Global</h1>
-            <p className="text-2xl mb-4 text-white">Mulai karirmu di bidang teknologi sebagai programmer, web atau mobile developer</p>
-            <a className="btn btn--lg btn--black transition-all ease duration-300 hover:bg-white hover:text-black" target="_blank" href="https://discord.com/invite/M9mNK6MBbu">Gabung Komunitas</a>
+            <h1 className="text-white mb-4 font-bold text-4xl">{t('title')}</h1>
+            <p className="text-2xl mb-4 text-white">{t('sub-title')}</p>
+            <a className="btn btn--lg btn--black transition-all ease duration-300 hover:bg-white hover:text-black" target="_blank" href="https://discord.com/invite/M9mNK6MBbu">{t('join-cta')}</a>
           </div>
           <div className="flex-1" />
         </div>

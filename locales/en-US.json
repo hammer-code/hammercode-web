@@ -3,5 +3,11 @@
     "support-us": "Support Us",
     "about": "About",
     "curriculum": "Curriculum"
+  },
+
+  "home": {
+    "title": "We Help the Locals to be Global-ready tech talent",
+    "sub-title": "Start your career in tech industry as web programmer or mobile developer",
+    "join-cta": "Join Us"
   }
 }
