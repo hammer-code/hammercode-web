@@ -5,3 +5,7 @@ html, body {
 .container {
   max-width: 1080px;
 }
+
+.small-container {
+  max-width: 768px;
+}
