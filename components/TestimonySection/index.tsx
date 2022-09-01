@@ -2,15 +2,10 @@ import React from "react";
 
 import TestimonyCard from "./TestimonyCard";
 
-interface Testimony {
-  text: string;
-  name: string;
-  school: string;
-  title?: string;
-}
+import { ITestimony } from "lib/types";
 
 function TestimonySection() {
-  const testimonies: Testimony[] = [
+  const testimonies: ITestimony[] = [
     {
       name: "Agi",
       school: "Universitas Tadulako '17",

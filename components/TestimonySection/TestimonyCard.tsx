@@ -1,13 +1,8 @@
 import React from "react";
 
-interface Testimony {
-  text: string;
-  name: string;
-  school: string;
-  title?: string;
-}
+import { ITestimony } from "lib/types";
 
-type TestimonyCard = Testimony;
+type TestimonyCard = ITestimony;
 
 function TestimonyCard({ text, name, school = "", title = "" }: TestimonyCard) {
   return (
