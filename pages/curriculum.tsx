@@ -1,4 +1,4 @@
-import MainLayout from "components/Layout/MainLayout";
+import MainLayout from "components/layout/MainLayout";
 
 export default function CurriculumPage() {
   return (

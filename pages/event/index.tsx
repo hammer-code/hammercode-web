@@ -1,8 +1,8 @@
 import { GetServerSidePropsContext } from "next";
 
-import MainLayout from "components/Layout/MainLayout";
-import EventFilter from "./EventFilter";
-import EventItem from "./EventItem";
+import MainLayout from "components/layout/MainLayout";
+import EventFilter from "components/event/EventFilter";
+import EventItem from "components/event/EventItem";
 
 import { IHMCEvent } from "lib/types";
 

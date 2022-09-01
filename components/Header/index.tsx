@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./Header.module.css";
 // About.js
 import { useTranslations } from "next-intl";
-import LocaleSwitcher from "../LocaleSwitcher";
+import LocaleSwitcher from "../home/LocaleSwitcher";
 
 function NavLink({
   href,

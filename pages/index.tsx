@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import MainLayout from "components/Layout/MainLayout";
-import HeroSection from "components/HeroSection";
-import AboutUsSection from "components/AboutUsSection";
-import ProgramsSection from "components/ProgramsSection";
-import MentorsSection from "components/MentorsSection";
-import TestimonySection from "components/TestimonySection";
-import ContactUsSection from "components/ContactUsSection";
+import MainLayout from "components/layout/MainLayout";
+import HeroSection from "components/home/HeroSection";
+import AboutUsSection from "components/home/AboutUsSection";
+import ProgramsSection from "components/home/ProgramsSection";
+import MentorsSection from "components/home/MentorsSection";
+import TestimonySection from "components/home/TestimonySection";
+import ContactUsSection from "components/home/ContactUsSection";
 
 export default function Home() {
   return (
