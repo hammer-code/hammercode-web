@@ -1,4 +1,4 @@
-import MainLayout from "components/layout/MainLayout";
+import MainLayout from "components/Layout/MainLayout";
 import { GetServerSidePropsContext } from "next/types";
 import { formatDate } from "lib/date";
 import Markdown from "markdown-to-jsx";
