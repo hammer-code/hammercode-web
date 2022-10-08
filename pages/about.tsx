@@ -1,45 +1,56 @@
 import MainLayout from "@core/layout/MainLayout";
+import {useTranslations} from "next-intl";
 
-export default function CurriculumPage() {
+interface  IAboutUs{
+  areaOfPrograms: Array<String>,
+  partners: Array<String>
+}
+
+export default function AboutUs({
+  areaOfPrograms,
+  partners
+  }:IAboutUs ) {
+  const t = useTranslations('about_us');
+
   return (
     <MainLayout>
       <section className="py-8 container mx-auto">
-        <h1>Tentang Kami</h1>
+        <h1>{t('title')}</h1>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>Background</h2>
-        <p>Kebutuhan akan talenta teknologi berkualitas terus bertambah. Namun sayangnya gap skills yang dimiliki oleh lulusan IT dari universitas dan kebutuhan industri masih cukup besar</p>
-        <p>Di pulau Jawa dan Sumatera, banyak universitas universitas top-level serta ekosistem komunitas dan industri yang lebih maju di banding daerah lain, khususnya Palu, Sulawesi Tengah.</p>
+        <h2>{t('background')}</h2>
+        <p>{t('background_description')}</p>
         <p></p>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>Our program areas</h2>
-        <p>Web Development</p>
-        <p>Mobile App Development</p>
-        <p>Data Analysis</p>
+        <h2>{t('area_of_programs')}</h2>
+        {
+          areaOfPrograms.map((areaOfProgram) =>
+            <p>{areaOfProgram}</p>
+          )
+        }
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>History</h2>
-        <p>Hammercode di inisiasi tahun 2017 oleh beberapa orang yang telah bekerja di Industri teknologi</p>
+        <h2>{t('history')}</h2>
+        <p>{t('history_description')}</p>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>Impact</h2>
-        <p>Hammercode telah menjangkau xxx orang talenta lokal. Namun sayangnya masih sedikit yang berhasil tembus di dunia kerja</p>
-        <p>Member kami telah bekerja untuk beberapa perusahaan ini:</p>
-        <p>Samsung, Warpin, e-Fishery, Tictag, Shipper, Ralali, Bareksa, Software Seni</p>
+        <h2>{t('impact')}</h2>
+        <p>{t('impact_description')}</p>
+        <p>{partners}</p>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>Our Vision</h2>
+        <h2>{t('our_vision')}</h2>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>Terima Kasih kepada Partner Kami</h2>
-        <p>It could be you!</p>
+        <h2>{t('partner')}</h2>
+        <p>{t('partner_description')}</p>
       </section>
     </MainLayout>
   );
@@ -51,7 +62,13 @@ export async function getStaticProps({ locale }: { locale: string }) {
       // You can get the messages from anywhere you like. The recommended
       // pattern is to put them in JSON files separated by language and read
       // the desired one based on the `locale` received from Next.js.
-      messages: (await import(`../locales/${locale}.json`)).default
+      messages: (await import(`../locales/${locale}.json`)).default,
+      areaOfPrograms:[
+        "Web Development",
+        "Mobile App Development",
+        "Data Analysis",
+      ],
+      partners:"Samsung, Warpin, e-Fishery, Tictag, Shipper, Ralali, Bareksa, Software Seni"
     }
   };
 }

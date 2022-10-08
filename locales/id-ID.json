@@ -10,5 +10,20 @@
     "title": "Siap Menjadi Talenta Teknologi Lokal Berdaya Saing Global?",
     "sub-title": "Mulai karirmu di bidang teknologi sebagai programmer, web atau mobile developer",
     "join-cta": "Gabung Komunitas"
+  },
+
+
+  "about_us": {
+    "title": "Tentang Kami",
+    "background": "Background",
+    "background_description": "Kebutuhan akan talenta teknologi berkualitas terus bertambah. Namun sayangnya gap skills yang dimiliki oleh lulusan IT dari universitas dan kebutuhan industri masih cukup besar. Di pulau Jawa dan Sumatera, banyak universitas universitas top-level serta ekosistem komunitas dan industri yang lebih maju di banding daerah lain, khususnya Palu, Sulawesi Tengah.",
+    "history": "History",
+    "history_description": "Hammercode di inisiasi tahun 2017 oleh beberapa orang yang telah bekerja di Industri teknologi",
+    "impact": "Impact",
+    "our_vision": "Our Vision",
+    "partner": "Terima Kasih kepada Partner Kami",
+    "area_of_programs": "Our program areas",
+    "impact_description": "Hammercode telah menjangkau xxx orang talenta lokal. Namun sayangnya masih sedikit yang berhasil tembus di dunia kerja. Member kami telah bekerja untuk beberapa perusahaan ini:",
+    "partner_description": "It could be you!"
   }
 }
