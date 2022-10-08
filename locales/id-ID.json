@@ -1,29 +1,36 @@
 {
   "nav": {
-    "support-us": "Dukung Kami",
     "about": "Tentang Kami",
     "curriculum": "Kurikulum",
-    "event": "Acara"
+    "event": "Acara",
+    "support-us": "Dukung Kami"
   },
 
   "home": {
-    "title": "Siap Menjadi Talenta Teknologi Lokal Berdaya Saing Global?",
+    "join-cta": "Gabung Komunitas",
     "sub-title": "Mulai karirmu di bidang teknologi sebagai programmer, web atau mobile developer",
-    "join-cta": "Gabung Komunitas"
+    "title": "Siap Menjadi Talenta Teknologi Lokal Berdaya Saing Global?"
   },
 
-
   "about_us": {
-    "title": "Tentang Kami",
-    "background": "Background",
+    "area_of_programs": "Program Kami",
+    "background": "Latar Belakang",
     "background_description": "Kebutuhan akan talenta teknologi berkualitas terus bertambah. Namun sayangnya gap skills yang dimiliki oleh lulusan IT dari universitas dan kebutuhan industri masih cukup besar. Di pulau Jawa dan Sumatera, banyak universitas universitas top-level serta ekosistem komunitas dan industri yang lebih maju di banding daerah lain, khususnya Palu, Sulawesi Tengah.",
-    "history": "History",
+    "history": "Sejarah",
     "history_description": "Hammercode di inisiasi tahun 2017 oleh beberapa orang yang telah bekerja di Industri teknologi",
-    "impact": "Impact",
-    "our_vision": "Our Vision",
-    "partner": "Terima Kasih kepada Partner Kami",
-    "area_of_programs": "Our program areas",
+    "impact": "Pencapaian",
     "impact_description": "Hammercode telah menjangkau xxx orang talenta lokal. Namun sayangnya masih sedikit yang berhasil tembus di dunia kerja. Member kami telah bekerja untuk beberapa perusahaan ini:",
-    "partner_description": "It could be you!"
+    "our_vision": "Visi Kami",
+    "partner": "Terima Kasih kepada Partner Kami",
+    "partner_description": "Bisa jadi, itu kamu!",
+    "title": "Tentang Kami"
+  },
+
+  "footer": {
+    "about_us": "Tentang Kami",
+    "contacts": "Kontak",
+    "home": "Home",
+    "lets_join": "Ayo Gabung",
+    "resources": "Resources"
   }
 }
