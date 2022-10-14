@@ -1,14 +1,30 @@
 {
   "nav": {
-    "support-us": "Support Us",
-    "about": "About",
+    "about": "About Us",
     "curriculum": "Curriculum",
-    "event": "Event"
+    "event": "Events",
+    "support-us": "Support Us"
   },
-
   "home": {
-    "title": "We Help You to be a job-ready tech talent",
-    "sub-title": "Start your career in tech industry as web programmer or mobile developer",
-    "join-cta": "Join Us"
+    "hero-title": "We Help You to be a job-ready tech talent",
+    "hero-description": "Start your career in tech industry as web programmer or mobile developer",
+    "hero-cta": "Join Us",
+    "who-we-are-session-title": "Who We Are?",
+    "who-we-are-session-sub-title": "Community to Advance our Hometown",
+    "who-we-are-session-description": "Hammercode is tech community initiated as a place for learner, programmer, developer, and the other tech industry players at Palu and surrounding areas. Our activities orienting to knowledge-transfer which is expected to accelerate the distribution of skills in industry and to produce ready to work technology talents",
+    "program-session-title": "Programs",
+    "program-session-sub-title": "Beneficial Activities and Free*",
+    "program-session-1": "Mentoring",
+    "program-description-1": "Our community members from various tech company ready to help you with internship or full-time job application.",
+    "program-session-2": "Workshops & Classes",
+    "program-description-2": "Classes and workshops are available for various fields, such as the web, mobile apps to data. The level of presented material varies, from beginner to advanced.",
+    "program-session-3": "Tech Talk",
+    "program-description-3": "Monthly knowledge sharing activities brought by practitioner from industry and community members.",
+    "program-cta": "More",
+    "impact-session-title": "Our Impact So Far",
+    "impact-session-sub-title": "Some Friends Who Feel the Benefits",
+    "contact-us-title": "Got any question or just want casual chit-chat?",
+    "contact-us-description": "We will love to be connected with you. Just hit the button below ;)",
+    "contact-us-cta": "Contact Us"
   }
 }

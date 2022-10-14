@@ -5,13 +5,28 @@
     "event": "Acara",
     "support-us": "Dukung Kami"
   },
-
   "home": {
-    "join-cta": "Gabung Komunitas",
-    "sub-title": "Mulai karirmu di bidang teknologi sebagai programmer, web atau mobile developer",
-    "title": "Siap Menjadi Talenta Teknologi Lokal Berdaya Saing Global?"
+    "hero-title": "Siap Menjadi Talenta Teknologi Lokal Berdaya Saing Global?",
+    "hero-description": "Mulai karirmu di bidang teknologi sebagai programmer, web atau mobile developer",
+    "hero-cta": "Gabung Komunitas",
+    "who-we-are-session-title": "Siapa Kami?",
+    "who-we-are-session-sub-title": "Komunitas Untuk Memajukan Daerah",
+    "who-we-are-session-description": "Hammercode adalah sebuah komunitas teknologi yang diinisiasi sebagai wadah berkumpulnya para pembelajar, programmer, web/mobile developer, dan pelaku industri teknologi lainnya yang berada di kota Palu dan sekitarnya. Kegiatan-kegiatan yang Kami selenggarakan berorientasi pada knowledge-transfer yang diharapkan dapat mempercepat pemerataan keterampilan di bidang teknologi informasi serta mencetak talenta teknologi yang siap kerja. Hammercode tempat yang cocok untukmu yang ingin belajar tentang coding/pemograman dan software engineering.",
+    "program-session-title": "Program",
+    "program-session-sub-title": "Kegiatan Bermanfaat dan Gratis*",
+    "program-session-1": "Mentoring",
+    "program-description-1": "Teman-teman anggota komunitas dari berbagai perusahaan teknologi siap membantu Kamu untuk persiapan aplikasi internship dan full-time job",
+    "program-session-2": "Kelas & Workshop",
+    "program-description-2": "Tersedia kelas dan workshop untuk berbagai bidang, seperti web, mobile apps hingga data. Tingakat materi yang disampaikan bervariasi, mulai dari beginner hingga advanced.",
+    "program-session-3": "Tech Talk",
+    "program-description-3": "Acara knowledge-sharing bulanan yang diisi oleh pemateri dari pelaku industri dan teman-teman komunitas.",
+    "program-cta": "Lebih Lanjut",
+    "impact-session-title": "Manfaat kami berikan",
+    "impact-session-sub-title": "Beberapa Teman Yang Merasakan Manfaat",
+    "contact-us-title": "Punya pertanyaan atau ingin sekedar ngobrol?",
+    "contact-us-description": "Kami dengan senang hati terhubung dengan Anda. Cukup klik tombol di bawah ;)",
+    "contact-us-cta": "Hubungi Kami"
   },
-
   "about_us": {
     "area_of_programs": "Program Kami",
     "background": "Latar Belakang",
@@ -25,7 +40,6 @@
     "partner_description": "Bisa jadi, itu kamu!",
     "title": "Tentang Kami"
   },
-
   "footer": {
     "about_us": "Tentang Kami",
     "contacts": "Kontak",
