@@ -26,5 +26,18 @@
     "contact-us-title": "Got any question or just want casual chit-chat?",
     "contact-us-description": "We will love to be connected with you. Just hit the button below ;)",
     "contact-us-cta": "Contact Us"
+  },
+  "about_us": {
+    "title": "About Us",
+    "area_of_programs": "Our Programs",
+    "background": "Background",
+    "background_description": "The need for quality technology talent continues to grow. Sadly the skills gap possessed by IT graduates from universities and industry needs is still pretty large. Java and Sumatra got lots of top-level universities with more advanced industry and community ecosystems than other areas, especially Palu, Central Celebes.",
+    "history-session": "History",
+    "history_description": "Hammercode was initiated at 2017 by some people who already works in technology industry",
+    "impact": "Impact",
+    "impact_description": "Hammercode has reached xxx local talent. But unfortunately, still only few who make it into the world of work. Some of our member :",
+    "our_vision": "Our Vision",
+    "partner-title": "Thank you for becoming our partner",
+    "partner_description": "Maybe, It's You!"
   }
 }
