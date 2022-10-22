@@ -42,11 +42,12 @@
     "partner-section-description": "Bisa jadi, itu kamu!",
     "title": "Tentang Kami"
   },
-  "footer": {
+  "footer-component": {
     "about-us": "Tentang Kami",
     "contacts": "Kontak",
-    "home": "Home",
+    "copyright-text": "Penggiat Teknologi Palu Berkarya",
+    "home": "Beranda",
     "lets-join": "Ayo Gabung",
-    "resources": "Resources"
+    "resources": "Sumber Daya"
   }
 }

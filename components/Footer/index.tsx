@@ -1,8 +1,11 @@
 import Link from "next/link";
-import { whatsappLink, whatsappNo } from "lib/url";
+import {whatsappLink, whatsappNo} from "lib/url";
 import styles from "./Footer.module.css";
+import {useTranslations} from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer-component");
+
   const year = new Date().getFullYear();
   return (
     <footer>
@@ -11,22 +14,22 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div></div>
             <div className="px-4">
-              <h2 className="text-lg font-bold mb-4">Resources</h2>
+              <h2 className="text-lg font-bold mb-4">{t('resources')}</h2>
               <ul>
                 <li className="mb-2">
                   <Link className="link" href="/">
-                    Home
+                    {t('home')}
                   </Link>
                 </li>
                 <li className="mb-2">
                   <Link className="link" href="/about">
-                    Tentang Kami
+                    {t('about-us')}
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="px-4">
-              <h2 className="text-lg font-bold mb-4">Ayo Gabung</h2>
+              <h2 className="text-lg font-bold mb-4">{t('lets-join')}</h2>
               <ul>
                 <li className="mb-2">
                   <a
@@ -67,7 +70,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="px-4">
-              <h2 className="text-lg font-bold mb-4">Kontak</h2>
+              <h2 className="text-lg font-bold mb-4">{t('contacts')}</h2>
               <ul>
                 <li>
                   <a

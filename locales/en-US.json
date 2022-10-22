@@ -41,5 +41,13 @@
     "partner-section-title": "Thank you for becoming our partner",
     "partner-section-description": "Maybe, It's You!",
     "title": "About Us"
+  },
+  "footer-component": {
+    "about-us": "About Us",
+    "contacts": "Contact",
+    "copyright-text": "Palu Technological Activists at Work",
+    "home": "Home",
+    "lets-join": "Let's Join",
+    "resources": "Resources"
   }
 }
