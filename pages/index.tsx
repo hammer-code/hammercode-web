@@ -6,13 +6,13 @@ import MainLayout from '@core/layout/MainLayout';
 import { useTranslations } from 'next-intl';
 
 interface Testimony {
-  text: string,
-  name: string,
-  school: string,
-  title?: string
+  text: string;
+  name: string;
+  school: string;
+  title?: string;
 }
 
-function HeroSection () {
+function HeroSection() {
   const t = useTranslations('home');
 
   return (
@@ -20,9 +20,17 @@ function HeroSection () {
       <div className="container mx-auto py-16">
         <div className="flex px-4">
           <div className="flex-1 py-16">
-            <h1 className="text-white mb-4 font-bold text-4xl">{t('title')}</h1>
-            <p className="text-2xl mb-4 text-white">{t('sub-title')}</p>
-            <a className="btn btn--lg btn--black transition-all ease duration-300 hover:bg-white hover:text-black" target="_blank" href="https://discord.com/invite/M9mNK6MBbu">{t('join-cta')}</a>
+            <h1 className="text-white mb-4 font-bold text-4xl">
+              {t('hero-title')}
+            </h1>
+            <p className="text-2xl mb-4 text-white">{t('hero-sub-title')}</p>
+            <a
+              className="btn btn--lg btn--black transition-all ease duration-300 hover:bg-white hover:text-black"
+              target="_blank"
+              href="https://discord.com/invite/M9mNK6MBbu"
+            >
+              {t('hero-cta')}
+            </a>
           </div>
         </div>
       </div>
@@ -30,19 +38,24 @@ function HeroSection () {
   );
 }
 
-function AboutUsSection () {
-  return  (
+function AboutUsSection() {
+  const t = useTranslations('home');
+  return (
     <section>
       <div className="container mx-auto">
         <div className="py-12">
           <div className="flex flex-col md:flex-row">
+            <div className="flex-1 px-4"></div>
             <div className="flex-1 px-4">
-
-            </div>
-            <div className="flex-1 px-4">
-              <p className="text-hc-green text-lg mb-5 font-bold">Siapa Kami</p>
-              <h2 className="text-4xl font-bold mb-4">Komunitas Untuk Memajukan Daerah</h2>
-              <p className="text-xl text-gray-700">Hammercode adalah sebuah komunitas teknologi yang diinisiasi sebagai wadah berkumpulnya para pembelajar, programmer, web/mobile developer, dan pelaku industri teknologi lainnya yang berada di kota Palu dan sekitarnya. Kegiatan-kegiatan yang Kami selenggarakan berorientasi pada <i>knowledge-transfer</i> yang diharapkan dapat mempercepat pemerataan keterampilan di bidang teknologi informasi serta mencetak talenta teknologi yang siap kerja. Hammercode tempat yang cocok untukmu yang ingin belajar tentang <i>coding</i>/pemograman dan <i>software engineering</i>.</p>
+              <p className="text-hc-green text-lg mb-5 font-bold">
+                {t('about-us-session-title')}
+              </p>
+              <h2 className="text-4xl font-bold mb-4">
+                {t('about-us-session-sub-title')}
+              </h2>
+              <p className="text-xl text-gray-700">
+                {t('about-us-session-description')}
+              </p>
             </div>
           </div>
         </div>
@@ -51,37 +64,70 @@ function AboutUsSection () {
   );
 }
 
-function ProgramsSection () {
-  return  (
+function ProgramsSection() {
+  const t = useTranslations('home');
+  return (
     <section>
       <div className="container mx-auto">
         <div className="py-12">
           <div className="px-6">
-            <p className="text-hc-green text-lg mb-5 font-bold">Program</p>
-            <h2 className="text-3xl font-bold mb-8">Kegiatan Bermanfaat dan Gratis*</h2>
+            <p className="text-hc-green text-lg mb-5 font-bold">
+              {t('program-session-title')}
+            </p>
+            <h2 className="text-3xl font-bold mb-8">
+              {t('program-session-sub-title')}
+            </h2>
           </div>
           <div className="flex flex-col md:flex-row">
             <div className={style['program-card-wrapper']}>
               <div className={style['program-card']}>
-                <h3 className="font-bold text-2xl mb-4">Mentoring</h3>
+                <h3 className="font-bold text-2xl mb-4">
+                  {t('program-session-1')}
+                </h3>
                 <p className="text-lg text-gray-700 mb-4">
-                  Teman-teman anggota komunitas dari berbagai perusahaan teknologi siap membantu Kamu untuk persiapan aplikasi <i>internship</i> dan <i>full-time job</i>
+                  {t('program-description-1')}
                 </p>
-                <a href={whatsappLink} target="_blank" className="btn btn--lg btn--secondary">Lebih Lanjut</a>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  className="btn btn--lg btn--secondary"
+                >
+                  {t('program-cta')}
+                </a>
               </div>
             </div>
             <div className={style['program-card-wrapper']}>
               <div className={style['program-card']}>
-                <h3 className="font-bold text-2xl mb-4">Kelas &amp; Workshop</h3>
-                <p className="text-lg text-gray-700 mb-4">Tersedia kelas dan workshop untuk berbagai bidang, seperti <strong>web</strong>, <strong>mobile apps</strong> hingga <strong>data</strong>. Tingakat materi yang disampaikan bervariasi, mulai dari <i>beginner</i> hingga <i>advanced</i>.</p>
-                <a href={whatsappLink} target="_blank" className="btn btn--lg btn--secondary">Lebih Lanjut</a>
+                <h3 className="font-bold text-2xl mb-4">
+                  {t('program-session-2')}
+                </h3>
+                <p className="text-lg text-gray-700 mb-4">
+                  {t('program-description-2')}
+                </p>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  className="btn btn--lg btn--secondary"
+                >
+                  {t('program-cta')}
+                </a>
               </div>
             </div>
             <div className={style['program-card-wrapper']}>
               <div className={style['program-card']}>
-                <h3 className="font-bold text-2xl mb-4">Tech Talk</h3>
-                <p className="text-lg text-gray-700 mb-4">Acara <i>knowledge-sharing</i> bulanan yang diisi oleh pemateri dari pelaku industri dan teman-teman komunitas.</p>
-                <a href="https://instagram.com/hmrcode" target="_blank" className="btn btn--lg btn--secondary">Lihat Acara</a>
+                <h3 className="font-bold text-2xl mb-4">
+                  {t('program-session-3')}
+                </h3>
+                <p className="text-lg text-gray-700 mb-4">
+                  {t('program-description-3')}
+                </p>
+                <a
+                  href="https://instagram.com/hmrcode"
+                  target="_blank"
+                  className="btn btn--lg btn--secondary"
+                >
+                  {t('program-cta')}
+                </a>
               </div>
             </div>
           </div>
@@ -91,14 +137,18 @@ function ProgramsSection () {
   );
 }
 
-
-function MentorsSection () {
+function MentorsSection() {
   return (
     <section className="bg-secondary">
       <div className="container mx-auto">
         <div className="py-32 text-center">
-          <h2 className="text-white text-3xl font-bold mb-4">Belajar Dari Ekspert Teknologi</h2>
-          <p className="text-white text-xl mb-8">Ambil kesempatan untuk belajar dari ekspert dari perusahaan teknologi</p>
+          <h2 className="text-white text-3xl font-bold mb-4">
+            Belajar Dari Ekspert Teknologi
+          </h2>
+          <p className="text-white text-xl mb-8">
+            Ambil kesempatan untuk belajar dari ekspert dari perusahaan
+            teknologi
+          </p>
           <div className="flex flex-col md:flex-row justify-center mt-6">
             <div className="logo-wrapper inline-block mb-2">
               <img src="/shipper.svg" className="inline-block" />
@@ -121,15 +171,13 @@ function MentorsSection () {
 
 type TestimonyCard = Testimony;
 
-function TestimonyCard ({
-  text,
-  name,
-  school = '',
-  title = '',
-}: TestimonyCard) {
+function TestimonyCard({ text, name, school = '', title = '' }: TestimonyCard) {
   return (
     <div className="text-gray-700">
-      <p className="mb-4 text-lg font-bold"><span>&rdquo;</span>{text}</p>
+      <p className="mb-4 text-lg font-bold">
+        <span>&rdquo;</span>
+        {text}
+      </p>
       <p className="mb-2">{name}</p>
       {school && <p className="">{school}</p>}
       {title && <p>{title}</p>}
@@ -137,11 +185,25 @@ function TestimonyCard ({
   );
 }
 
-function TestimonySection () {
+function TestimonySection() {
   const testimonies: Testimony[] = [
-    { name: 'Agi', school: 'Universitas Tadulako \'17', text: 'hammercode komunitas nya friendly banget, baik mentor, dan peserta pelajarnya. Kelas  di hammercode jg itu sangat seru, metode mengajar para mentornya sangat membntu, dijamin paham 1000%' },
-    { name: 'Zulnabil', school: 'Universitas Tadulako \'16', title: 'Frontend Engineer @ 99.co', text: 'As a software engineer or who wants to, prepare yourself to face the real IT industry. Since studying from college is not enough, you have to find your mentor. In hammercode you can find it, and expand your network. Because your network is your net worth' },
-    { name: 'Akwan', school: 'Universitas Tadulako \'19', title: 'Backend Engineer Intern @ Bareksa', text: 'Dengan bantuan dan dorongan teman-teman dan mentor yg ada di komunitas, saya berhasil mendapatkan kesempatan magang di tahun pertama dan kedua kuliah' },
+    {
+      name: 'Agi',
+      school: "Universitas Tadulako '17",
+      text: 'hammercode komunitas nya friendly banget, baik mentor, dan peserta pelajarnya. Kelas  di hammercode jg itu sangat seru, metode mengajar para mentornya sangat membntu, dijamin paham 1000%',
+    },
+    {
+      name: 'Zulnabil',
+      school: "Universitas Tadulako '16",
+      title: 'Frontend Engineer @ 99.co',
+      text: 'As a software engineer or who wants to, prepare yourself to face the real IT industry. Since studying from college is not enough, you have to find your mentor. In hammercode you can find it, and expand your network. Because your network is your net worth',
+    },
+    {
+      name: 'Akwan',
+      school: "Universitas Tadulako '19",
+      title: 'Backend Engineer Intern @ Bareksa',
+      text: 'Dengan bantuan dan dorongan teman-teman dan mentor yg ada di komunitas, saya berhasil mendapatkan kesempatan magang di tahun pertama dan kedua kuliah',
+    },
   ];
   return (
     <section>
@@ -149,7 +211,9 @@ function TestimonySection () {
         <div className="py-12">
           <div className="px-4 mb-12">
             <p className="text-hc-green text-lg mb-5 font-bold">Our Impact</p>
-            <h2 className="text-3xl font-bold mb-6">Beberapa Teman Yang Merasakan Manfaat</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              Beberapa Teman Yang Merasakan Manfaat
+            </h2>
           </div>
           <div className="flex flex-col justify-between md:flex-row">
             <div className="flex-1 mb-4 px-4">
@@ -168,25 +232,39 @@ function TestimonySection () {
   );
 }
 
-function ContactUsSection () {
+function ContactUsSection() {
   return (
     <section>
       <div className="container mx-auto">
         <div className="py-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Punya pertanyaan atau ingin sekedar ngobrol?</h2>
-          <p className="text-xl text-gray-700 mb-8">Kami dengan senang hati terhubung dengan Anda. Cukup klik tombol di bawah ;)</p>
-          <a target="_blank" href={whatsappLink} className="btn btn--lg btn--secondary">Hubungi Kami</a>
+          <h2 className="text-3xl font-bold mb-4">
+            Punya pertanyaan atau ingin sekedar ngobrol?
+          </h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Kami dengan senang hati terhubung dengan Anda. Cukup klik tombol di
+            bawah ;)
+          </p>
+          <a
+            target="_blank"
+            href={whatsappLink}
+            className="btn btn--lg btn--secondary"
+          >
+            Hubungi Kami
+          </a>
         </div>
       </div>
     </section>
   );
 }
 
-export default function Home () {
+export default function Home() {
   return (
     <MainLayout>
       <Head>
-        <title>Hammercode - Komunitas programmer, web/mobile software developer, praktisi IT kota Palu</title>
+        <title>
+          Hammercode - Komunitas programmer, web/mobile software developer,
+          praktisi IT kota Palu
+        </title>
       </Head>
       <main>
         <HeroSection />
@@ -206,7 +284,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
       // You can get the messages from anywhere you like. The recommended
       // pattern is to put them in JSON files separated by language and read
       // the desired one based on the `locale` received from Next.js.
-      messages: (await import(`../locales/${locale}.json`)).default
-    }
+      messages: (await import(`../locales/${locale}.json`)).default,
+    },
   };
 }
