@@ -1,16 +1,13 @@
 import MainLayout from "components/layout/MainLayout";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 
 interface IAboutUs {
   areaOfPrograms: Array<String>,
   partners: Array<String>
 }
 
-export default function AboutUs({
-  areaOfPrograms,
-  partners
-}: IAboutUs) {
-  const t = useTranslations('about_us');
+export default function AboutUs({areaOfPrograms, partners}: IAboutUs) {
+  const t = useTranslations('about-us-page');
 
   return (
     <MainLayout>
@@ -19,13 +16,13 @@ export default function AboutUs({
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>{t('background')}</h2>
-        <p>{t('background_description')}</p>
+        <h2>{t('background-section-title')}</h2>
+        <p>{t('background-section-description')}</p>
         <p></p>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>{t('area_of_programs')}</h2>
+        <h2>{t('our-programs')}</h2>
         {
           areaOfPrograms.map((areaOfProgram) =>
             <p>{areaOfProgram}</p>
@@ -34,29 +31,29 @@ export default function AboutUs({
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>{t('history')}</h2>
-        <p>{t('history_description')}</p>
+        <h2>{t('history-section-title')}</h2>
+        <p>{t('history-section-description')}</p>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>{t('impact')}</h2>
-        <p>{t('impact_description')}</p>
+        <h2>{t('impact-section-title')}</h2>
+        <p>{t('impact-section-description')}</p>
         <p>{partners}</p>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>{t('our_vision')}</h2>
+        <h2>{t('our-vision')}</h2>
       </section>
 
       <section className="py-8 container mx-auto">
-        <h2>{t('partner')}</h2>
-        <p>{t('partner_description')}</p>
+        <h2>{t('partner-section-title')}</h2>
+        <p>{t('partner-section-description')}</p>
       </section>
     </MainLayout>
   );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
+export async function getStaticProps({locale}: { locale: string }) {
   return {
     props: {
       // You can get the messages from anywhere you like. The recommended

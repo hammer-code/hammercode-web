@@ -2,9 +2,12 @@ import React from "react";
 
 import TestimonyCard from "./TestimonyCard";
 
-import { ITestimony } from "lib/types";
+import {ITestimony} from "lib/types";
+import {useTranslations} from "next-intl";
 
 function TestimonySection() {
+
+  const t = useTranslations("home-page");
   const testimonies: ITestimony[] = [
     {
       name: "Agi",
@@ -29,9 +32,9 @@ function TestimonySection() {
       <div className="container mx-auto">
         <div className="py-12">
           <div className="px-4 mb-12">
-            <p className="text-hc-green text-lg mb-5 font-bold">Our Impact</p>
+            <p className="text-hc-green text-lg mb-5 font-bold">{t('impact-section-title')}</p>
             <h2 className="text-3xl font-bold mb-6">
-              Beberapa Teman Yang Merasakan Manfaat
+              {t('impact-section-sub-title')}
             </h2>
           </div>
           <div className="flex flex-col justify-between md:flex-row">
