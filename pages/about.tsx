@@ -1,7 +1,7 @@
-import MainLayout from "@core/layout/MainLayout";
-import {useTranslations} from "next-intl";
+import MainLayout from "components/layout/MainLayout";
+import { useTranslations } from "next-intl";
 
-interface  IAboutUs{
+interface IAboutUs {
   areaOfPrograms: Array<String>,
   partners: Array<String>
 }
@@ -9,7 +9,7 @@ interface  IAboutUs{
 export default function AboutUs({
   areaOfPrograms,
   partners
-  }:IAboutUs ) {
+}: IAboutUs) {
   const t = useTranslations('about_us');
 
   return (
@@ -63,12 +63,12 @@ export async function getStaticProps({ locale }: { locale: string }) {
       // pattern is to put them in JSON files separated by language and read
       // the desired one based on the `locale` received from Next.js.
       messages: (await import(`../locales/${locale}.json`)).default,
-      areaOfPrograms:[
+      areaOfPrograms: [
         "Web Development",
         "Mobile App Development",
         "Data Analysis",
       ],
-      partners:"Samsung, Warpin, e-Fishery, Tictag, Shipper, Ralali, Bareksa, Software Seni"
+      partners: "Samsung, Warpin, e-Fishery, Tictag, Shipper, Ralali, Bareksa, Software Seni"
     }
   };
 }
