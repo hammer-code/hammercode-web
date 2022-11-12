@@ -17,12 +17,12 @@ export default function Footer() {
               <h2 className="text-lg font-bold mb-4">{t('resources')}</h2>
               <ul>
                 <li className="mb-2">
-                  <Link className="link" href="/">
+                  <Link className="link" href="/" legacyBehavior>
                     {t('home')}
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link className="link" href="/about">
+                  <Link className="link" href="/about" legacyBehavior>
                     {t('about-us')}
                   </Link>
                 </li>

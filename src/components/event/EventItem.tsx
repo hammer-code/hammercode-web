@@ -17,7 +17,7 @@ function EventItem({ locale, event }: { locale: string; event: IHMCEvent }) {
           <p className="text-yellow-700">{formatDate(event.date, locale)}</p>
           <h2 className="font-bold text-xl">
             <Link href={`/event/${event.id}`}>
-              <a>{event.name}</a>
+              {event.name}
             </Link>
           </h2>
           <p className="mb-4">Online</p>
