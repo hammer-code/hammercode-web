@@ -1,10 +1,10 @@
-import Link from "next/link";
-import {whatsappLink, whatsappNo} from "lib/url";
-import styles from "./Footer.module.css";
-import {useTranslations} from "next-intl";
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { whatsappLink, whatsappNo } from 'src/lib/url';
+import styles from './Footer.module.css';
 
 export default function Footer() {
-  const t = useTranslations("footer-component");
+  const t = useTranslations('footer-component');
 
   const year = new Date().getFullYear();
   return (

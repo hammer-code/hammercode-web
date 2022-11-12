@@ -1,7 +1,7 @@
-import MainLayout from "components/layout/MainLayout";
-import { GetServerSidePropsContext } from "next/types";
-import { formatDate } from "lib/date";
-import Markdown from "markdown-to-jsx";
+import MainLayout from 'src/components/layout/MainLayout';
+import { GetServerSidePropsContext } from 'next/types';
+import { formatDate } from 'lib/date';
+import Markdown from 'markdown-to-jsx';
 
 type HMCEvent = {
   id: number;
@@ -136,7 +136,7 @@ export default function EventDetail({ event }: { event: HMCEvent | null }) {
                   <div className="mb-4 flex">
                     <span className="text-gray-400">
                       <TimeIcon />
-                    </span>{" "}
+                    </span>{' '}
                     <span className="ml-3">{formatDate(event.date)}</span>
                   </div>
                   <div className="flex">
@@ -187,7 +187,7 @@ export async function getServerSideProps(
   const id = ctx.query.id;
   try {
     event = await fetch(
-      process.env.NEXT_PUBLIC_API_BASE_URL + "/api/v1/events/" + id
+      process.env.NEXT_PUBLIC_API_BASE_URL + '/api/v1/events/' + id
     )
       .then((res) => res.json())
       .then((res) => {

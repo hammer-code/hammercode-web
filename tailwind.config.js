@@ -1,9 +1,5 @@
 module.exports = {
-  content: [
-    "./pages/**/*.{html,js,jsx,ts,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./core/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   plugins: [],
   theme: {
     fontFamily: {
@@ -12,11 +8,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': '#0F3665',
-        'secondary': '#00CCFF',
+        primary: '#0F3665',
+        secondary: '#00CCFF',
         'hc-blue-light': '#00CCFF33',
         'hc-green': '#3DDC84',
-        'hc-green-light': '#3DDC8499'
+        'hc-green-light': '#3DDC8499',
       },
     },
   },

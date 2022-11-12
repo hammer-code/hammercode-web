@@ -1,14 +1,19 @@
-import MainLayout from "components/layout/MainLayout";
+import MainLayout from 'src/components/layout/MainLayout';
 
-export default function SupportUsPage() {
+export default function CurriculumPage() {
   return (
     <MainLayout>
-      <p>Sponsorship</p>
+      <p>Kurikulum</p>
+      <p>Web Programming</p>
+      <p>Frontend Web Developer</p>
+      <p>Backend Web Developer</p>
+      <p>Android Developer</p>
 
       <section>
-        <p>Bank Syariah Indonesia</p>
-        <p>720 3000 768</p>
-        <p>Penggiat Teknologi Palu Berkarya</p>
+        <h2>Mentors</h2>
+
+        <p>John Doe</p>
+        <p>Mark</p>
       </section>
     </MainLayout>
   );
