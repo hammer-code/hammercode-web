@@ -5,20 +5,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     query: { _id },
   } = req;
 
-  const certificates: Array<{
-    _id: string;
-    name: string;
-    imageLink: string;
-    shareLink: string;
-  }> = [];
-
-  const certificate = certificates.find(
-    (certificate) => certificate._id === _id
+  const response = await fetch(
+    `https://www.morizkay.com/api/palu-dev-day/certificates/${_id}`
   );
+  const data = await response.json();
 
-  if (certificate) {
-    res.status(200).json(certificate);
-  } else {
-    res.status(404).json({ message: 'Certificate not found' });
-  }
+  res.status(200).json(data);
 };
