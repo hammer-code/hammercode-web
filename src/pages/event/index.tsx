@@ -4,7 +4,7 @@ import MainLayout from 'src/components/layout/MainLayout';
 import EventFilter from 'src/components/event/EventFilter';
 import EventItem from 'src/components/event/EventItem';
 
-import { IHMCEvent } from 'lib/types';
+import { IHMCEvent } from 'src/lib/types';
 
 export default function EventListPage({
   locale,

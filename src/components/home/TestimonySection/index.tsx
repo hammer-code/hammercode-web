@@ -1,30 +1,29 @@
-import React from "react";
+import React from 'react';
 
-import TestimonyCard from "./TestimonyCard";
+import TestimonyCard from './TestimonyCard';
 
-import {ITestimony} from "lib/types";
-import {useTranslations} from "next-intl";
+import { ITestimony } from 'src/lib/types';
+import { useTranslations } from 'next-intl';
 
 function TestimonySection() {
-
-  const t = useTranslations("home-page");
+  const t = useTranslations('home-page');
   const testimonies: ITestimony[] = [
     {
-      name: "Agi",
+      name: 'Agi',
       school: "Universitas Tadulako '17",
-      text: "hammercode komunitas nya friendly banget, baik mentor, dan peserta pelajarnya. Kelas  di hammercode jg itu sangat seru, metode mengajar para mentornya sangat membntu, dijamin paham 1000%",
+      text: 'hammercode komunitas nya friendly banget, baik mentor, dan peserta pelajarnya. Kelas  di hammercode jg itu sangat seru, metode mengajar para mentornya sangat membntu, dijamin paham 1000%',
     },
     {
-      name: "Zulnabil",
+      name: 'Zulnabil',
       school: "Universitas Tadulako '16",
-      title: "Frontend Engineer @ 99.co",
-      text: "As a software engineer or who wants to, prepare yourself to face the real IT industry. Since studying from college is not enough, you have to find your mentor. In hammercode you can find it, and expand your network. Because your network is your net worth",
+      title: 'Frontend Engineer @ 99.co',
+      text: 'As a software engineer or who wants to, prepare yourself to face the real IT industry. Since studying from college is not enough, you have to find your mentor. In hammercode you can find it, and expand your network. Because your network is your net worth',
     },
     {
-      name: "Akwan",
+      name: 'Akwan',
       school: "Universitas Tadulako '19",
-      title: "Backend Engineer Intern @ Bareksa",
-      text: "Dengan bantuan dan dorongan teman-teman dan mentor yg ada di komunitas, saya berhasil mendapatkan kesempatan magang di tahun pertama dan kedua kuliah",
+      title: 'Backend Engineer Intern @ Bareksa',
+      text: 'Dengan bantuan dan dorongan teman-teman dan mentor yg ada di komunitas, saya berhasil mendapatkan kesempatan magang di tahun pertama dan kedua kuliah',
     },
   ];
   return (
@@ -32,7 +31,9 @@ function TestimonySection() {
       <div className="container mx-auto">
         <div className="py-12">
           <div className="px-4 mb-12">
-            <p className="text-hc-green text-lg mb-5 font-bold">{t('impact-section-title')}</p>
+            <p className="text-hc-green text-lg mb-5 font-bold">
+              {t('impact-section-title')}
+            </p>
             <h2 className="text-3xl font-bold mb-6">
               {t('impact-section-sub-title')}
             </h2>

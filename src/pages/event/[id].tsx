@@ -1,6 +1,6 @@
 import MainLayout from 'src/components/layout/MainLayout';
 import { GetServerSidePropsContext } from 'next/types';
-import { formatDate } from 'lib/date';
+import { formatDate } from 'src/lib/date';
 import Markdown from 'markdown-to-jsx';
 
 type HMCEvent = {
