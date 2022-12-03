@@ -39,6 +39,7 @@ const Certificate: NextPage<{
                 className="my-4 rounded-lg shadow-md object-cover object-center"
                 width="640"
                 height="480"
+                alt={`Sertikat Palu Developer Day 2022 - ${name}`}
               />
             </div>
             <p className="text-center text-gray-300 mb-8">Sertifikat : {_id}</p>
