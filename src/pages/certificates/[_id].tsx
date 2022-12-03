@@ -25,8 +25,9 @@ const Certificate: NextPage<{
       </Head>
       <div className="w-full">
         <div className="p-4 my-12">
-          <p className="text-2xl font-bold text-center">
-            Terima Kasih kepada {name}!
+          <p className="text-2xl font-semibold text-center ">
+            Terima Kasih kepada{' '}
+            <strong className="font-extrabold">{name}</strong>!
           </p>
           <p className="text-center text-gray-500">
             Kamu telah berpartisipasi dalam acara ini.
