@@ -40,7 +40,9 @@ const Certificate: NextPage<{
                 height="480"
               />
             </div>
-            <p className="text-center text-gray-300 mb-8">{_id}</p>
+            <p className="text-center text-gray-300 mb-8">
+              Nomor Sertifikat : {_id}
+            </p>
 
             <div className="flex justify-center">
               <a
