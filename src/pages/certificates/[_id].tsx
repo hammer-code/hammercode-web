@@ -15,13 +15,12 @@ const Certificate: NextPage<{
     <>
       <Head>
         <title>Palu Dev Day 2022</title>
-        <meta property="og:title" content={`PDD 2022 - ${name}`} key="title" />
+        <meta content={`PDD 2022 - ${name}`} key="title" />
         <meta
-          property="og:description"
           content="Terima Kasih Kamu Sudah Berpartisipasi di Palu Developer Day 2022"
           key="description"
         />
-        <meta property="og:image" content={imageLink} key="image" />
+        <meta content={imageLink} key="image" />
       </Head>
       <div className="w-full">
         <div className="p-4 my-12">
