@@ -1,12 +1,12 @@
-import MainLayout from "components/layout/MainLayout";
-import {useTranslations} from "next-intl";
+import MainLayout from 'src/components/layout/MainLayout';
+import { useTranslations } from 'next-intl';
 
 interface IAboutUs {
-  areaOfPrograms: Array<String>,
-  partners: Array<String>
+  areaOfPrograms: Array<String>;
+  partners: Array<String>;
 }
 
-export default function AboutUs({areaOfPrograms, partners}: IAboutUs) {
+export default function AboutUs({ areaOfPrograms, partners }: IAboutUs) {
   const t = useTranslations('about-us-page');
 
   return (
@@ -23,11 +23,9 @@ export default function AboutUs({areaOfPrograms, partners}: IAboutUs) {
 
       <section className="py-8 container mx-auto">
         <h2>{t('our-programs')}</h2>
-        {
-          areaOfPrograms.map((areaOfProgram) =>
-            <p>{areaOfProgram}</p>
-          )
-        }
+        {areaOfPrograms.map((areaOfProgram) => (
+          <p>{areaOfProgram}</p>
+        ))}
       </section>
 
       <section className="py-8 container mx-auto">
@@ -53,7 +51,7 @@ export default function AboutUs({areaOfPrograms, partners}: IAboutUs) {
   );
 }
 
-export async function getStaticProps({locale}: { locale: string }) {
+export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       // You can get the messages from anywhere you like. The recommended
@@ -61,11 +59,12 @@ export async function getStaticProps({locale}: { locale: string }) {
       // the desired one based on the `locale` received from Next.js.
       messages: (await import(`../locales/${locale}.json`)).default,
       areaOfPrograms: [
-        "Web Development",
-        "Mobile App Development",
-        "Data Analysis",
+        'Web Development',
+        'Mobile App Development',
+        'Data Analysis',
       ],
-      partners: "Samsung, Warpin, e-Fishery, Tictag, Shipper, Ralali, Bareksa, Software Seni"
-    }
+      partners:
+        'Samsung, Warpin, e-Fishery, Tictag, Shipper, Ralali, Bareksa, Software Seni',
+    },
   };
 }

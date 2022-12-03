@@ -1,10 +1,10 @@
-import { GetServerSidePropsContext } from "next";
+import { GetServerSidePropsContext } from 'next';
 
-import MainLayout from "components/layout/MainLayout";
-import EventFilter from "components/event/EventFilter";
-import EventItem from "components/event/EventItem";
+import MainLayout from 'src/components/layout/MainLayout';
+import EventFilter from 'src/components/event/EventFilter';
+import EventItem from 'src/components/event/EventItem';
 
-import { IHMCEvent } from "lib/types";
+import { IHMCEvent } from 'lib/types';
 
 export default function EventListPage({
   locale,
@@ -34,7 +34,7 @@ export async function getServerSideProps(
   let events: IHMCEvent[] = [];
   try {
     events = await fetch(
-      process.env.NEXT_PUBLIC_API_BASE_URL + "/api/v1/events"
+      process.env.NEXT_PUBLIC_API_BASE_URL + '/api/v1/events'
     )
       .then((res) => res.json())
       .then((res) => {

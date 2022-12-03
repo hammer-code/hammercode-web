@@ -1,10 +1,10 @@
-import Link from "next/link";
-import {whatsappLink, whatsappNo} from "lib/url";
-import styles from "./Footer.module.css";
-import {useTranslations} from "next-intl";
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { whatsappLink, whatsappNo } from 'src/lib/url';
+import styles from './Footer.module.css';
 
 export default function Footer() {
-  const t = useTranslations("footer-component");
+  const t = useTranslations('footer-component');
 
   const year = new Date().getFullYear();
   return (
@@ -17,12 +17,12 @@ export default function Footer() {
               <h2 className="text-lg font-bold mb-4">{t('resources')}</h2>
               <ul>
                 <li className="mb-2">
-                  <Link className="link" href="/">
+                  <Link className="link" href="/" legacyBehavior>
                     {t('home')}
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link className="link" href="/about">
+                  <Link className="link" href="/about" legacyBehavior>
                     {t('about-us')}
                   </Link>
                 </li>

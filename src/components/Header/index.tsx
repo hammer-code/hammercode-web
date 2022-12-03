@@ -26,7 +26,11 @@ function NavLink({
   if (!mappedChildren?.length) return null;
 
   return (
-    <Link href={href} locale={router.locale} className="text-red-800">
+    <Link
+      href={href}
+      locale={router.locale}
+      className="text-red-800"
+      legacyBehavior>
       {mappedChildren[0]}
     </Link>
   );
@@ -41,9 +45,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div>
             <Link href="/">
-              <a>
-                <img className={styles["img-logo"]} src="/h-logo.svg" />
-              </a>
+
+              <img className={styles["img-logo"]} src="/h-logo.svg" />
+
             </Link>
           </div>
 

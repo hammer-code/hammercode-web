@@ -1,8 +1,7 @@
-node_modules
-*.log
 .DS_Store
 .next
+pnpm*
+.yarn*
+*.log
+node_modules
 out
-pnpm.lock.yaml
-yarn.lock
-package-lock.json
