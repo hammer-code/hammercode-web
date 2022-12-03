@@ -3,3 +3,6 @@ node_modules
 .DS_Store
 .next
 out
+pnpm.lock.yaml
+yarn.lock
+package-lock.json
