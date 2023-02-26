@@ -7,10 +7,10 @@ const Certificate: NextPage<{
   certificate: {
     _id: string;
     name: string;
-    imageLink: string;
-    shareLink: string;
+    image_link: string;
+    share_link: string;
   };
-}> = ({ certificate: { _id, name, imageLink, shareLink } }): JSX.Element => {
+}> = ({ certificate: { _id, name, image_link, share_link } }): JSX.Element => {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ const Certificate: NextPage<{
           content="Terima Kasih Kamu Sudah Berpartisipasi di Palu Developer Day 2022"
           key="description"
         />
-        <meta content={imageLink} key="image" />
+        <meta content={image_link} key="image" />
       </Head>
       <div className="w-full">
         <div className="p-4 my-12">
@@ -34,7 +34,7 @@ const Certificate: NextPage<{
           <div className="w-full h-full relative">
             <div className="flex justify-center">
               <Image
-                src={imageLink}
+                src={image_link}
                 className="my-4 rounded-lg shadow-md object-cover object-center"
                 width="640"
                 height="480"
@@ -45,7 +45,7 @@ const Certificate: NextPage<{
 
             <div className="flex justify-center">
               <a
-                href={shareLink}
+                href={share_link}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                 target={'_blank'}
               >
@@ -60,7 +60,7 @@ const Certificate: NextPage<{
 
               <div className="flex justify-center space-x-6">
                 <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${shareLink}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${share_link}`}
                 >
                   <FaFacebook
                     className="w-full text-3xl text-blue-500 hover:text-blue-700"
@@ -68,7 +68,7 @@ const Certificate: NextPage<{
                   />
                 </a>
                 <a
-                  href={`https://twitter.com/intent/tweet?text=Saya telah mengikuti acara Palu Developer Day yang diadakan oleh Hammercode.org&url=${shareLink}`}
+                  href={`https://twitter.com/intent/tweet?text=Saya telah mengikuti acara Palu Developer Day yang diadakan oleh Hammercode.org&url=${share_link}`}
                   target={'_blank'}
                 >
                   <FaTwitter
@@ -77,7 +77,7 @@ const Certificate: NextPage<{
                   />
                 </a>
                 <a
-                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareLink}`}
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${share_link}`}
                   target={'_blank'}
                 >
                   <FaLinkedin

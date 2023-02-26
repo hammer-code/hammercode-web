@@ -6,8 +6,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } = req;
 
   const response = await fetch(
-    `https://www.morizkay.com/api/palu-dev-day/certificates/${_id}`
-  );
+    `http://127.0.0.1:8000/v1/certificates/PDD 2022/${_id}`,{
+      method: 'GET'
+    });
   const data = await response.json();
 
   res.status(200).json(data);
