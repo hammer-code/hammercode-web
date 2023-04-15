@@ -6,7 +6,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } = req;
 
   const response = await fetch(
-    `http://127.0.0.1:8000/v1/certificates/PDD 2022/${_id}`,{
+    `http://127.0.0.1:8000/v1/certificates/${_id}`,{
       method: 'GET'
     });
   const data = await response.json();

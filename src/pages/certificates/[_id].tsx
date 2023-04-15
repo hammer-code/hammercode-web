@@ -9,15 +9,16 @@ const Certificate: NextPage<{
     name: string;
     image_link: string;
     share_link: string;
+    event: string;
   };
-}> = ({ certificate: { _id, name, image_link, share_link } }): JSX.Element => {
+}> = ({ certificate: { _id, name, image_link, share_link, event } }): JSX.Element => {
   return (
     <>
       <Head>
-        <title>Palu Dev Day 2022</title>
-        <meta content={`PDD 2022 - ${name}`} key="title" />
+        <title>{event}</title>
+        <meta content={`${event} - ${name}`} key="title" />
         <meta
-          content="Terima Kasih Kamu Sudah Berpartisipasi di Palu Developer Day 2022"
+          content={`Terima Kasih Kamu Sudah Berpartisipasi di ${event}`}
           key="description"
         />
         <meta content={image_link} key="image" />
@@ -38,7 +39,7 @@ const Certificate: NextPage<{
                 className="my-4 rounded-lg shadow-md object-cover object-center"
                 width="640"
                 height="480"
-                alt={`Sertikat Palu Developer Day 2022 - ${name}`}
+                alt={`Sertikat ${event} - ${name}`}
               />
             </div>
             <p className="text-center text-gray-300 mb-8">Sertifikat : {_id}</p>
@@ -68,7 +69,7 @@ const Certificate: NextPage<{
                   />
                 </a>
                 <a
-                  href={`https://twitter.com/intent/tweet?text=Saya telah mengikuti acara Palu Developer Day yang diadakan oleh Hammercode.org&url=${share_link}`}
+                  href={`https://twitter.com/intent/tweet?text=Saya telah mengikuti kegiatan ${event} yang diadakan oleh Hammercode.org&url=${share_link}`}
                   target={'_blank'}
                 >
                   <FaTwitter
