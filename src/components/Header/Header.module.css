@@ -1,8 +1,0 @@
-.img-logo {
-  width: 180px;
-}
-
-.header {
-  @apply py-4;
-  @apply border-b;
-}
