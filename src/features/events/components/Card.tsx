@@ -1,5 +1,5 @@
-import { Card } from '@/components/ui/card';
-import { FC } from 'react';
+import { Card } from "@/components/ui/card";
+import { FC } from "react";
 
 const CardEvent: FC = () => {
   return <Card>Test</Card>;

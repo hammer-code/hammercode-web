@@ -1,4 +1,4 @@
-import CardEvent from './components/Card';
+import CardEvent from "./components/Card";
 
 const Events = () => {
   return (
