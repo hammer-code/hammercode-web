@@ -9,4 +9,8 @@ export const navbarLists: NavbarListType[] = [
     title: "Contact",
     link: "/contact",
   },
+  {
+    title: "Event",
+    link: "/events",
+  },
 ];
