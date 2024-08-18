@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/common/navbar/Navbar";
+import Wrapper from "@/components/layout/wrapper";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -21,8 +21,7 @@ export default function RootLayout({
         <link rel="icon" href="/assets/icons/ic_hmc-dark.svg" sizes="any" />
       </head>
       <body className={sora.className}>
-        <Navbar />
-        <div className="max-w-7xl mx-auto p-5">{children}</div>
+        <Wrapper>{children}</Wrapper>
       </body>
     </html>
   );
