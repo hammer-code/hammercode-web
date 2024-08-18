@@ -15,10 +15,13 @@ const HeroSection = () => {
 
           {/* Social Media */}
           <div className="flex items-center gap-2">
-            {socialMedia.map(({ id, icon, is_gradient, colorOne, colorTwo }) => (
+            {socialMedia.map(({ id, icon, is_gradient, color_one, color_two }) => (
               <div
                 key={id}
-                className={`${is_gradient ? `bg-gradient-to-br from-[${colorOne}] to-[${colorTwo}]` : `bg-[${colorOne}]`} p-3 rounded-md flex justify-center w-12 h-12`}
+                style={{
+                  background: is_gradient ? `linear-gradient(135deg, ${color_one} 0%, ${color_two} 100%)` : color_one,
+                }}
+                className="p-3 rounded-md flex justify-center w-12 h-12"
               >
                 <Image src={icon} alt={icon} width={55} height={55} className="w-full" />
               </div>
