@@ -1,13 +1,10 @@
 import Link from "next/link";
-// import Image from "next/image";
 
 import NavbarList from "./NavbarList";
 import { navbarLists } from "./constants";
 import { ModeToggle } from "../modetoggle";
-// import { useTheme } from "next-themes";
 
 const Navbar = () => {
-  // const { theme } = useTheme();
   return (
     <header className="border-b">
       <div className="max-w-7xl mx-auto p-5">
