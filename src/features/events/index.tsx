@@ -8,11 +8,11 @@ import Image from "next/image";
 const Events = () => {
   return (
     <div>
-      <div className="w-full bg-hmc-primary rounded-lg">
+      <div className="w-full bg-primary-foreground rounded-lg">
         <div className="container px-4 h-32 flex justify-between items-center">
           <div className="">
-            <h1 className="text-white text-3xl font-semibold">Events</h1>
-            <p className="text-white">Ayo ikuti berbagai Event dan Agenda menarik</p>
+            <h1 className="text-hmc-primary text-3xl font-semibold">Events</h1>
+            <p className="text-hmc-primary">Ayo ikuti berbagai Event dan Agenda menarik</p>
           </div>
           <div>
             <Select>

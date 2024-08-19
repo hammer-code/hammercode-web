@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --hmc-primary: #0f3665;
+    --hmc-primary-foreground: #fff;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -34,6 +35,7 @@
 
   .dark {
     --hmc-primary: #fff;
+    --hmc-primary-foreground: #0f3665;
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;

@@ -15,7 +15,10 @@ const config = {
     },
     extend: {
       colors: {
-        "hmc-primary": "var(--hmc-primary)",
+        "hmc-primary": {
+          DEFAULT: "var(--hmc-primary)",
+          foreground: "var(--hmc-primary-foreground)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
