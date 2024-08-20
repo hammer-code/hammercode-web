@@ -21,7 +21,7 @@ const HeroSection = () => {
                 style={{
                   background: is_gradient ? `linear-gradient(135deg, ${color_one} 0%, ${color_two} 100%)` : color_one,
                 }}
-                className="p-3 rounded-md flex justify-center w-12 h-12"
+                className="p-3 rounded-md flex justify-center w-12 h-12 cursor-pointer transition-all duration-75 hover:scale-[1.1]"
               >
                 <Image src={icon} alt={icon} width={55} height={55} className="w-full" />
               </div>
