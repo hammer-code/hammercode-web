@@ -1,11 +1,11 @@
 name: Development CI/CD Pipeline
 
 on:
-  push:
+  pull_request:
     branches:
       - development
-    # types:
-    #   - closed
+    types:
+      - closed
 
 jobs:
   build-test:
@@ -21,13 +21,13 @@ jobs:
           node-version: "20"
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
       - name: Test Next.js App
-        run: npm run test
+        run: yarn test
 
       - name: Build Next.js App
-        run: npm run build
+        run: yarn build
 
   deploy:
     runs-on: ubuntu-latest
