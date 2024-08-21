@@ -1,11 +1,11 @@
 name: Development CI/CD Pipeline
 
 on:
-  pull_request:
+  push:
     branches:
       - development
-    types:
-      - closed
+    # types:
+    #   - closed
 
 jobs:
   build-test:
@@ -49,8 +49,8 @@ jobs:
 
           ssh -o StrictHostKeyChecking=no -i vps_key.pem $VPS_USER@$VPS_IP "
           cd /home/hmcroot/app/development/hammercode-web &&
-          git restore . && git checkout development &&
+          git restore . && git clean -f && git checkout development &&
           git pull origin development &&
-          yarn install &&
-          yarn run build &&
-          pm2 restart hammercode-web-dev || pm2 start npm --name 'hammercode-web-dev' -- start -- -p 4001"
+          yarn &&
+          yarn build &&
+          pm2 restart hammercode-web-dev || PORT=4001 pm2 start npm --name 'hammercode-web-dev' -- start"
