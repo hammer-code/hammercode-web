@@ -7,14 +7,14 @@ const Events = () => {
   return (
     <div>
       <div className="w-full bg-slate-100 dark:bg-hmc-primary-foreground rounded-lg">
-        <div className="container px-4 h-32 flex justify-between items-center">
+        <div className="container p-4 h-32 flex flex-wrap gap-1 justify-between items-center">
           <div className="">
-            <h1 className="text-hmc-primary text-3xl font-semibold">Events</h1>
-            <p className="text-hmc-primary">Ayo ikuti berbagai Event dan Agenda menarik</p>
+            <h1 className="text-hmc-primary text-xl sm:text-3xl font-semibold">Events</h1>
+            <p className="text-hmc-primary text-xs sm:text-base">Ayo ikuti berbagai Event dan Agenda menarik</p>
           </div>
-          <div>
+          <div className="w-full sm:w-auto">
             <Select>
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="sm:w-[180px]">
                 <SelectValue placeholder="Category" />
               </SelectTrigger>
               <SelectContent>
