@@ -62,8 +62,5 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "resolutions": {
-    "wrap-ansi": "7.0.0",
-    "string-width": "4.1.0"
-  }
+  "type": "module"
 }
