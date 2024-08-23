@@ -8,6 +8,10 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const config: Config = {
+  preset: "ts-jest",
+  transform: {
+    "^.+\\.(t|j)sx?$": ["ts-jest", { isolatedModules: true }],
+  },
   coverageProvider: "v8",
   testEnvironment: "jsdom",
   moduleNameMapper: {
