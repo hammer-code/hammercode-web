@@ -1,4 +1,4 @@
-name: Development CI/CD Pipeline
+name: Development CI/CD Piipeline
 
 on:
   pull_request:
