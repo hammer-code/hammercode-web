@@ -18,7 +18,7 @@ const Navbar = () => {
 
           <nav className="flex items-center gap-4">
             {LINK.map(({ href, id }) => (
-              <NavbarList href={href} title={t(`navbar.link-${id}`)} />
+              <NavbarList key={id} href={href} title={t(`navbar.link-${id}`)} />
             ))}
             <div className="flex gap-2 items-center">
               <ModeToggle />
