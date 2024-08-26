@@ -1,0 +1,19 @@
+{
+  "Layout": {
+    "navbar": {
+      "link-1": "Tentang",
+      "link-2": "Acara",
+      "link-3": "Kontak"
+    }
+  },
+  "HomePage": {
+    "section-hero": {
+      "title": "Tingkatkan Kemampuan dengan mengikuti kelas berkualitas bersama kami!",
+      "description": "Hammercode adalah komunitas teknologi yang berbasis di Palu, Indonesia"
+    }
+  },
+  "EventsPage": {
+    "title": "Acara",
+    "description": "Ayo ikuti berbagai acara seru dan dapatkan pengalaman tak terlupakan!"
+  }
+}
