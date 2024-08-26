@@ -2,9 +2,11 @@ import { Link } from "@/lib/navigation";
 import { ComponentProps } from "react";
 import { pathnames } from "@/lib/config";
 
-function NavbarList<Pathname extends keyof typeof pathnames>({ href, ...rest }: ComponentProps<typeof Link<Pathname>>) {
+export type NavbarListProps<Pathname extends keyof typeof pathnames> = ComponentProps<typeof Link<Pathname>>;
+
+function NavbarList<Pathname extends keyof typeof pathnames>({ href, ...rest }: NavbarListProps<Pathname>) {
   return (
-    <Link href={href} {...rest}>
+    <Link href={href}>
       <span>{rest.title}</span>
     </Link>
   );

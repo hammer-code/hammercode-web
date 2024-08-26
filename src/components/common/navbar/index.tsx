@@ -4,6 +4,7 @@ import NavbarList from "./NavbarList";
 import { ModeToggle } from "../mode-toggle";
 import { useTranslations } from "next-intl";
 import LocaleToggle from "../locale-toggle";
+import { LINK } from "./constant";
 
 const Navbar = () => {
   const t = useTranslations("Layout");
@@ -16,9 +17,9 @@ const Navbar = () => {
           </Link>
 
           <nav className="flex items-center gap-4">
-            <NavbarList href="/about" title={t("navbar.link-1")} />
-            <NavbarList href="/events" title={t("navbar.link-2")} />
-            <NavbarList href="/contact" title={t("navbar.link-3")} />
+            {LINK.map(({ href, id }) => (
+              <NavbarList href={href} title={t(`navbar.link-${id}`)} />
+            ))}
             <div className="flex gap-2 items-center">
               <ModeToggle />
               <LocaleToggle />
