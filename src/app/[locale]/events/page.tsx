@@ -1,8 +1,6 @@
-import { FC } from "react";
-
 import EventsPage from "@/features/events";
 
-const Events: FC = () => {
+const Events = () => {
   return <EventsPage />;
 };
 export default Events;

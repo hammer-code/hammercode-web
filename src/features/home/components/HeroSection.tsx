@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { socialMedia } from "../constants";
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
+  const t = useTranslations("HomePage");
   return (
     <div className="flex md:flex-row flex-col items-center gap-6 justify-between">
       <div className="basis-1/2">
         <div className="space-y-4">
           <div className="space-y-1">
             <h1 className="text-hmc-primary md:text-5xl text-3xl font-bold md:leading-[60px]">
-              Improve Your Skill by Talking High-Quality Classes with Us!
+              {t("section-hero.title")}
             </h1>
-            <p className="text-slate-600">Hammercode is a tech community based in Palu, Indonesia</p>
+            <p className="text-slate-600">{t("section-hero.description")}</p>
           </div>
 
           {/* Social Media */}

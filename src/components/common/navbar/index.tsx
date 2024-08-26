@@ -1,10 +1,13 @@
 import Link from "next/link";
 
 import NavbarList from "./NavbarList";
-import { navbarLists } from "./constants";
-import { ModeToggle } from "../modetoggle";
+import { ModeToggle } from "../mode-toggle";
+import { useTranslations } from "next-intl";
+import LocaleToggle from "../locale-toggle";
+import { LINK } from "./constant";
 
 const Navbar = () => {
+  const t = useTranslations("Layout");
   return (
     <header className="border-b">
       <div className="max-w-7xl mx-auto p-5">
@@ -14,10 +17,13 @@ const Navbar = () => {
           </Link>
 
           <nav className="flex items-center gap-4">
-            {navbarLists.map(({ link, title }) => (
-              <NavbarList key={link} title={title} link={link} />
+            {LINK.map(({ href, id }) => (
+              <NavbarList key={id} href={href} title={t(`navbar.link-${id}`)} />
             ))}
-            <ModeToggle />
+            <div className="flex gap-2 items-center">
+              <ModeToggle />
+              <LocaleToggle />
+            </div>
           </nav>
         </div>
       </div>

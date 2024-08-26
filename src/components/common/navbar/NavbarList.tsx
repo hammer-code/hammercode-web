@@ -1,13 +1,15 @@
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
+import { ComponentProps } from "react";
+import { pathnames } from "@/lib/config";
 
-import { NavbarListType } from "./types";
+export type NavbarListProps<Pathname extends keyof typeof pathnames> = ComponentProps<typeof Link<Pathname>>;
 
-const NavbarList = ({ title, link }: NavbarListType) => {
+function NavbarList<Pathname extends keyof typeof pathnames>({ href, ...rest }: NavbarListProps<Pathname>) {
   return (
-    <Link href={link}>
-      <span>{title}</span>
+    <Link href={href}>
+      <span>{rest.title}</span>
     </Link>
   );
-};
+}
 
 export default NavbarList;
