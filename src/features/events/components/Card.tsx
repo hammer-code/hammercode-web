@@ -21,15 +21,15 @@ const CardEvent: FC<{ data: EventType }> = ({ data }) => {
         height={150}
         className="hidden md:block rounded-l-lg object-cover w-64 min-h-36"
       />
-      <div className="w-full bg-black/70 py-4">
+      <div className="w-full py-4">
         <CardContent className="pb-0">
           <Badge className="mb-2" variant={`${status}`}>
             {status}
           </Badge>
           <h2 className="text-base sm:text-xl font-bold text-hmc-blue-600">{title}</h2>
-          <p className="text-gray-100">{date_event}</p>
+          <p>{date_event}</p>
         </CardContent>
-        <CardFooter className="flex flex-wrap gap-2 text-gray-200 mt-2 pb-2 sm:flex-row">
+        <CardFooter className="flex flex-wrap gap-2 mt-2 pb-2 sm:flex-row">
           <div className="flex items-center gap-2">
             <Clock size={15} />
             <p className="text-sm text-nowrap">{duration}</p>
