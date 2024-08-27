@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="w-10 h-8 bg-[url('/assets/icons/ic_hmc-light.svg')] dark:bg-[url('/assets/icons/ic_hmc-dark.svg')] bg-cover bg-center"></div>
           </Link>
 
-          <nav className="flex items-center gap-4">
+          <nav className="flex items-center gap-7">
             {LINK.map(({ href, id }) => (
               <NavbarList key={id} href={href} title={t(`navbar.link-${id}`)} />
             ))}
