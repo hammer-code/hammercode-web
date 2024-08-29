@@ -21,7 +21,7 @@ const CardEvent: FC<{ data: EventType }> = ({ data }) => {
         height={150}
         className="hidden md:block rounded-l-lg object-cover w-64 min-h-36"
       />
-      <div className="w-full py-4">
+      <div className="w-full py-4 bg-background/60">
         <CardContent className="pb-0">
           <Badge className="mb-2" variant={`${status}`}>
             {status}
