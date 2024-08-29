@@ -5,3 +5,9 @@ export type SocialMediaType = {
   color_one: string;
   color_two?: string;
 };
+
+export type PartnerType = {
+  id: number;
+  logo: string;
+  alt: string;
+};
