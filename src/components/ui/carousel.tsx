@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-import Autoplay from "embla-carousel-autoplay";
+// import Autoplay from "embla-carousel-autoplay";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -19,6 +19,7 @@ type CarouselProps = {
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
+  isDots?: boolean;
 };
 
 type CarouselContextProps = {
@@ -28,6 +29,8 @@ type CarouselContextProps = {
   scrollNext: () => void;
   canScrollPrev: boolean;
   canScrollNext: boolean;
+  selectedIndex: number;
+  totalSlides: number;
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -43,16 +46,18 @@ function useCarousel() {
 }
 
 const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & CarouselProps>(
-  ({ orientation = "horizontal", opts, setApi, className, children, ...props }, ref) => {
+  ({ orientation = "horizontal", opts, setApi, isDots = false, className, children, ...props }, ref) => {
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
-      },
-      [Autoplay({ delay: 2000 })]
+      }
+      // [Autoplay({ delay: 5000 })]
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
+    const [totalSlides, setTotalSlides] = React.useState(0);
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -61,6 +66,7 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
 
       setCanScrollPrev(api.canScrollPrev());
       setCanScrollNext(api.canScrollNext());
+      setSelectedIndex(api.selectedScrollSnap());
     }, []);
 
     const scrollPrev = React.useCallback(() => {
@@ -97,6 +103,8 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
         return;
       }
 
+      setTotalSlides(api.scrollSnapList().length);
+
       onSelect(api);
       api.on("reInit", onSelect);
       api.on("select", onSelect);
@@ -117,6 +125,8 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
           scrollNext,
           canScrollPrev,
           canScrollNext,
+          selectedIndex,
+          totalSlides,
         }}
       >
         <div
@@ -128,6 +138,7 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
           {...props}
         >
           {children}
+          {isDots && <CarouselBullets />}
         </div>
       </CarouselContext.Provider>
     );
@@ -168,6 +179,32 @@ const CarouselItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLD
   }
 );
 CarouselItem.displayName = "CarouselItem";
+
+const CarouselBullets = () => {
+  const { api, selectedIndex, totalSlides } = useCarousel();
+
+  const scrollToSlide = (index: number) => {
+    if (api) {
+      api.scrollTo(index);
+    }
+  };
+
+  return (
+    <div className="flex justify-center mt-4 space-x-2">
+      {Array.from({ length: totalSlides }).map((_, index) => (
+        <button
+          key={index}
+          onClick={() => scrollToSlide(index)}
+          className={cn(
+            "h-2 rounded-full",
+            selectedIndex === index ? "bg-tertiary dark:bg-slate-600 w-6" : "bg-gray-200 w-3"
+          )}
+          aria-label={`Slide ${index + 1}`}
+        />
+      ))}
+    </div>
+  );
+};
 
 const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProps<typeof Button>>(
   ({ className, variant = "outline", size = "icon", ...props }, ref) => {

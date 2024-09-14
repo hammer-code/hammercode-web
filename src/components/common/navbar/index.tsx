@@ -9,7 +9,7 @@ import { LINK } from "./constant";
 const Navbar = () => {
   const t = useTranslations("Layout");
   return (
-    <header className="border-b">
+    <header className="border-b fixed w-full top-0 bg-white dark:bg-slate-950 z-50">
       <div className="max-w-7xl mx-auto p-5">
         <div className="flex items-center justify-between gap-4">
           <Link href="/">
