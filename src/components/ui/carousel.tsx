@@ -199,7 +199,7 @@ const CarouselBullets = () => {
             "h-2 rounded-full",
             selectedIndex === index ? "bg-tertiary dark:bg-slate-600 w-6" : "bg-gray-200 w-3"
           )}
-          aria-label={`Slide ${index + 1}`}
+          aria-label={`Slide ${index}`}
         />
       ))}
     </div>

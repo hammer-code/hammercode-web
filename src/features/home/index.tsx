@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection";
 import ProgramSection from "./components/ProgramSection";
 import CourseSection from "./components/CourseSection";
 import TestimonialSection from "./components/TestimonialSection";
+import ContactSection from "./components/ContactSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <ProgramSection />
       <CourseSection />
       <TestimonialSection />
+      <ContactSection />
     </div>
   );
 };
