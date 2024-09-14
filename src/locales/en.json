@@ -10,6 +10,10 @@
     "section-hero": {
       "title": "Improve Your Skill by Talking High-Quality Classes with Us!",
       "description": "Hammercode is a tech community based in Palu, Indonesia"
+    },
+    "section-partner": {
+      "title": "Learning From Our Expert Tech",
+      "description": "Take the opportunity to learn from experts from tech companies"
     }
   },
   "EventsPage": {
