@@ -9,7 +9,8 @@
   "HomePage": {
     "section-hero": {
       "title": "Tingkatkan Kemampuan dengan mengikuti kelas berkualitas bersama kami!",
-      "description": "Hammercode adalah komunitas teknologi yang berbasis di Palu, Indonesia"
+      "description": "Hammercode adalah komunitas teknologi yang berbasis di Palu, Indonesia",
+      "join-button": "Gabung Komunitas"
     },
     "section-partner": {
       "title": "Belajar Dari Ahli Praktisi Teknologi",

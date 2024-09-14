@@ -1,6 +1,9 @@
+import Link from "next/link";
 import Image from "next/image";
 import { socialMedia } from "../constants";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
+import { HandCoins } from "lucide-react";
 
 const HeroSection = () => {
   const t = useTranslations("HomePage");
@@ -17,17 +20,24 @@ const HeroSection = () => {
 
           {/* Social Media */}
           <div className="flex items-center gap-2">
-            {socialMedia.map(({ id, icon, is_gradient, color_one, color_two }) => (
-              <div
-                key={id}
-                style={{
-                  background: is_gradient ? `linear-gradient(135deg, ${color_one} 0%, ${color_two} 100%)` : color_one,
-                }}
-                className="p-3 rounded-md flex justify-center w-12 h-12 cursor-pointer transition-all duration-75 hover:scale-[1.1]"
-              >
-                <Image src={icon} alt={icon} width={55} height={55} className="w-full" />
-              </div>
-            ))}
+            <Button asChild size="lg" className="flex items-center gap-2">
+              <Link href="https://discord.com/invite/M9mNK6MBbu" target="_blank">
+                {t("section-hero.join-button")} <HandCoins />
+              </Link>
+            </Button>
+            <div className="flex items-center gap-2">
+              {socialMedia.map(({ id, icon, is_gradient, color_one, color_two }) => (
+                <div
+                  key={id}
+                  style={{
+                    background: is_gradient ? `linear-gradient(135deg, ${color_one} 0%, ${color_two} 100%)` : color_one,
+                  }}
+                  className="p-3 rounded-md flex justify-center w-12 h-12 cursor-pointer transition-all duration-150 hover:scale-[1.025]"
+                >
+                  <Image src={icon} alt={icon} width={55} height={55} className="w-full" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
