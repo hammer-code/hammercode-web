@@ -14,14 +14,7 @@ const TestimonialSection = () => {
         </p>
       </div>
 
-      <Carousel
-        opts={{
-          align: "start",
-          slidesToScroll: 1,
-        }}
-        className="w-full"
-        isDots={true}
-      >
+      <Carousel className="w-full" isDots={true}>
         <CarouselContent className="space-x-4 sm:pr-4">
           {testimonialData.map((data) => (
             <CarouselItem key={data.id} className="md:basis-1/2 basis-[100%]">
