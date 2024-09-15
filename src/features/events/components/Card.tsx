@@ -11,7 +11,7 @@ const CardEvent: FC<{ data: EventType }> = ({ data }) => {
   return (
     <Card
       key={id}
-      className="min-h-28 flex border rounded-lg shadow-md bg-cover bg-center bg-[image:var(--image-url)] md:bg-none"
+      className={`flex ${id === "1" ? "flex-col col-span-2 min-h-60" : "flex-col min-h-28"} border rounded-lg shadow-md bg-cover bg-center bg-[image:var(--image-url)] md:bg-none`}
       style={{ "--image-url": `url(${image_event})` } as CSSProperties}
     >
       <Image
@@ -19,7 +19,7 @@ const CardEvent: FC<{ data: EventType }> = ({ data }) => {
         alt={title}
         width={150}
         height={150}
-        className="hidden md:block rounded-l-lg object-cover w-64 min-h-36"
+        className="w-full hidden md:block rounded-t-lg object-cover h-60"
       />
       <div className="w-full py-4 bg-background/60">
         <CardContent className="pb-0">

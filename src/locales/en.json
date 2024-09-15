@@ -6,6 +6,10 @@
       "link-3": "Contact"
     }
   },
+  "LocaleLayout": {
+    "title": "Welcome to Hammercode 👋",
+    "description": "Hammercode is a community based in Palu, Indonesia."
+  },
   "HomePage": {
     "section-hero": {
       "title": "Improve Your Skill by Talking High-Quality Classes with Us!",

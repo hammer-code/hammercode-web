@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 
 import NavbarList from "./NavbarList";
 import { ModeToggle } from "../mode-toggle";

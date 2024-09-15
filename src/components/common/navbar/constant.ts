@@ -10,8 +10,8 @@ export const LINK: NavbarListProps<ValidPathnames>[] = [
     id: "2",
     href: "/events",
   },
-  {
-    id: "3",
-    href: "/contact",
-  },
+  // {
+  //   id: "3",
+  //   href: "/contact",
+  // },
 ];

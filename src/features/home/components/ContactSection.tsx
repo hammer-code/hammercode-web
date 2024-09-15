@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 
 const ContactSection = () => {
   return (

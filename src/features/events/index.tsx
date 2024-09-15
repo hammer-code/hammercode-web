@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 const Events = () => {
   const t = useTranslations("EventsPage");
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-5 py-28">
       <div className="w-full rounded-lg">
         <div className="h-16 flex flex-wrap gap-1 justify-between items-center">
           <div className="">
@@ -32,7 +32,7 @@ const Events = () => {
         </div>
       </div>
       <div className="py-8">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-4 gap-y-8 lg:grid-cols-4">
           {eventsData.map((event) => (
             <CardEvent key={event.id} data={event} />
           ))}

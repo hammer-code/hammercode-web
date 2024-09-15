@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import Image from "next/image";
 import { socialMedia } from "../constants";
 import { useTranslations } from "next-intl";
@@ -47,7 +47,7 @@ const HeroSection = () => {
       </div>
 
       <div className="basis-1/2">
-        <Image src="/assets/images/illustrations/hero-section.png" alt="hero-section" width={1500} height={1500} />
+        <Image src="/assets/images/illustrations/hero-section.webp" alt="hero-section" width={1500} height={1500} />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { dataFooter } from "./constants";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
