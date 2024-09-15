@@ -6,6 +6,10 @@
       "link-3": "Kontak"
     }
   },
+  "LocaleLayout": {
+    "title": "Selamat Datang di Hammercode 👋",
+    "description": "Hammercode adalah komunitas teknologi yang berada di Kota Palu, Indonesia."
+  },
   "HomePage": {
     "section-hero": {
       "title": "Tingkatkan Kemampuan dengan mengikuti kelas berkualitas bersama kami!",

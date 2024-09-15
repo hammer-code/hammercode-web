@@ -11,6 +11,19 @@
   },
   "plugins": ["@typescript-eslint", "react"],
   "rules": {
-    "no-console": "warn"
+    "no-console": "warn",
+    "no-restricted-imports": [
+      "error",
+      {
+        "name": "next/link",
+        "message": "Please import `@navigation` instead.",
+        "importNames": ["default"]
+      },
+      {
+        "name": "next/navigation",
+        "message": "Please import `@navigation` instead.",
+        "importNames": ["redirect", "permanenRedirect", "useRouter", "useNavigation"]
+      }
+    ]
   }
 }

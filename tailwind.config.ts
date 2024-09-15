@@ -21,6 +21,12 @@ const config = {
     },
     extend: {
       colors: {
+        "hmc-base": {
+          blue: "#0AB6FF",
+          purple: "#5061FC",
+          darkblue: "#1F4C8F",
+          lightblue: "#00BFE9",
+        },
         "hmc-primary": {
           DEFAULT: "var(--hmc-primary)",
           foreground: "var(--hmc-primary-foreground)",
@@ -37,6 +43,10 @@ const config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        tertiary: {
+          DEFAULT: "var(--hmc-tertiary)",
+          foreground: "var(--hmc-tertiary-foreground)",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

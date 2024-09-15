@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import Image from "next/image";
 import { socialMedia } from "../constants";
 import { useTranslations } from "next-intl";
@@ -8,34 +8,38 @@ import { HandCoins } from "lucide-react";
 const HeroSection = () => {
   const t = useTranslations("HomePage");
   return (
-    <div className="flex md:flex-row flex-col items-center gap-6 justify-between">
+    <div className="max-w-7xl mx-auto px-5 py-32 flex lg:flex-row flex-col items-center gap-6 justify-between">
       <div className="basis-1/2">
         <div className="space-y-4">
           <div className="space-y-1">
             <h1 className="text-hmc-primary md:text-5xl text-3xl font-bold md:leading-[60px]">
               {t("section-hero.title")}
             </h1>
-            <p className="text-slate-600">{t("section-hero.description")}</p>
+            <p className="text-slate-600 dark:text-slate-400">{t("section-hero.description")}</p>
           </div>
 
           {/* Social Media */}
           <div className="flex items-center gap-2">
             <Button asChild size="lg" className="flex items-center gap-2">
               <Link href="https://discord.com/invite/M9mNK6MBbu" target="_blank">
-                {t("section-hero.join-button")} <HandCoins />
+                {t("section-hero.join-button")} <HandCoins className="lg:w-6 w-5" />
               </Link>
             </Button>
             <div className="flex items-center gap-2">
-              {socialMedia.map(({ id, icon, is_gradient, color_one, color_two }) => (
-                <div
-                  key={id}
-                  style={{
-                    background: is_gradient ? `linear-gradient(135deg, ${color_one} 0%, ${color_two} 100%)` : color_one,
-                  }}
-                  className="p-3 rounded-md flex justify-center w-12 h-12 cursor-pointer transition-all duration-150 hover:scale-[1.025]"
-                >
-                  <Image src={icon} alt={icon} width={55} height={55} className="w-full" />
-                </div>
+              {socialMedia.map((data) => (
+                <Button asChild key={data.id} size="icon">
+                  <Link
+                    href={data.navigate_url}
+                    style={{
+                      background: data.is_gradient
+                        ? `linear-gradient(135deg, ${data.color_one} 0%, ${data.color_two} 100%)`
+                        : data.color_one,
+                    }}
+                    className="p-2 rounded-md flex justify-center md:w-12 w-10 md:h-12 h-10"
+                  >
+                    <Image src={data.icon} alt={data.icon} width={55} height={55} className="w-full" />
+                  </Link>
+                </Button>
               ))}
             </div>
           </div>
@@ -43,7 +47,7 @@ const HeroSection = () => {
       </div>
 
       <div className="basis-1/2">
-        <Image src="/assets/images/illustrations/hero-section.png" alt="hero-section" width={1500} height={1500} />
+        <Image src="/assets/images/illustrations/hero-section.webp" alt="hero-section" width={1500} height={1500} />
       </div>
     </div>
   );
