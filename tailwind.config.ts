@@ -21,6 +21,12 @@ const config = {
     },
     extend: {
       colors: {
+        "hmc-base": {
+          blue: "#0AB6FF",
+          purple: "#5061FC",
+          darkblue: "#1F4C8F",
+          lightblue: "#00BFE9",
+        },
         "hmc-primary": {
           DEFAULT: "var(--hmc-primary)",
           foreground: "var(--hmc-primary-foreground)",

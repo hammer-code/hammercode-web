@@ -5,7 +5,7 @@ import Footer from "@/components/common/footer/Footer";
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
       <Navbar />
       {children}
       <Footer />

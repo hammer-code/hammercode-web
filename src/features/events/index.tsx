@@ -8,11 +8,11 @@ const Events = () => {
   const t = useTranslations("EventsPage");
   return (
     <div>
-      <div className="w-full bg-slate-100 dark:bg-hmc-primary-foreground rounded-lg">
-        <div className="container p-4 h-32 flex flex-wrap gap-1 justify-between items-center">
+      <div className="w-full rounded-lg">
+        <div className="h-16 flex flex-wrap gap-1 justify-between items-center">
           <div className="">
-            <h1 className="text-hmc-primary text-xl sm:text-3xl font-semibold">{t("title")}</h1>
-            <p className="text-hmc-primary text-xs sm:text-base">{t("description")}</p>
+            <h1 className="text-hmc-base-blue text-xl sm:text-3xl font-semibold">{t("title")}</h1>
+            <p className="text-gray-500 text-xs sm:text-base">{t("description")}</p>
           </div>
           <div className="w-full sm:w-auto">
             <Select>
