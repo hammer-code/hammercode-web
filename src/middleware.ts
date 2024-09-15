@@ -3,7 +3,7 @@ import { locales } from "./lib/config";
 
 export default createMiddleware({
   locales: locales,
-  defaultLocale: "en",
+  defaultLocale: "id",
   localePrefix: "as-needed",
 });
 
