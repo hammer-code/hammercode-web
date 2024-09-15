@@ -48,3 +48,7 @@ export default async function LocaleRootLayout({ children, params: { locale } }:
     </html>
   );
 }
+
+// {
+//   ""
+// }
