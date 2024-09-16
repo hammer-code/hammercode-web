@@ -20,6 +20,11 @@ export const socialMedia: SocialMediaType[] = [
 
 export const partnersData: PartnerType[] = [
   {
+    id: 2,
+    logo: "/assets/images/logos/efishery-logo.png",
+    alt: "Efishery Logo",
+  },
+  {
     id: 0,
     logo: "/assets/images/logos/educourse-logo.png",
     alt: "Educourse Logo",
@@ -29,11 +34,7 @@ export const partnersData: PartnerType[] = [
     logo: "/assets/images/logos/shipper-logo.png",
     alt: "Shipper Logo",
   },
-  {
-    id: 2,
-    logo: "/assets/images/logos/efishery-logo.png",
-    alt: "Efishery Logo",
-  },
+
   {
     id: 3,
     logo: "/assets/images/logos/icehouse-logo.png",
