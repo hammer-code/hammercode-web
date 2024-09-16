@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "@/lib/navigation";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const AboutSection = () => {
+  const t = useTranslations("HomePage.section-about");
+
   return (
     <div className="container lg:py-40 py-10">
       <div className="flex lg:flex-row flex-col-reverse lg:gap-16 gap-10">
@@ -32,18 +35,19 @@ const AboutSection = () => {
         </div>
         <div className="basis-1/2 gap-4 lg:-mt-16">
           <div className="flex flex-col lg:items-end gap-4">
-            <h2 className="text-tertiary md:text-3xl text-2xl font-bold">Siapa Kami? 🤔</h2>
+            <h2 className="text-tertiary md:text-3xl text-2xl font-bold">{t("title")}</h2>
             <h1 className="text-hmc-primary lg:text-right md:text-5xl text-3xl font-bold md:leading-[60px]">
-              Komunitas Untuk Memajukan Daerah.
+              {t("sub-title")}
             </h1>
             <div className="flex flex-col lg:items-end gap-3">
               <p className="md:text-base lg:text-right text-sm text-slate-500 dark:text-slate-400 md:leading-7">
-                <b>Hammercode</b> adalah sebuah komunitas teknologi yang diinisiasi sebagai wadah berkumpulnya para
-                pembelajar, programmer, dan pelaku industri teknologi lainnya yang berada di kota Palu dan sekitarnya.
+                {t.rich("description", {
+                  b: (chunks) => <b>{chunks}</b>,
+                })}
               </p>
               <Button variant="tertiary" asChild className="flex items-center gap-2 w-fit">
                 <Link href="/about">
-                  View More <ArrowRight className="lg:w-6 w-5" />
+                  {t("view-more-button")} <ArrowRight className="lg:w-6 w-5" />
                 </Link>
               </Button>
             </div>

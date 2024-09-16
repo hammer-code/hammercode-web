@@ -3,15 +3,15 @@ import { testimonialData } from "../constants";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { useTranslations } from "next-intl";
 
 const TestimonialSection = () => {
+  const t = useTranslations("HomePage.section-testimonial");
   return (
     <div className="container py-10 space-y-8">
       <div className="flex flex-col space-y-2">
-        <h2 className="text-tertiary md:text-3xl text-2xl font-bold">Manfaat 🌟</h2>
-        <p className="md:text-base text-sm text-slate-500 dark:text-slate-400">
-          Beberapa testimonial dari teman dan alumni yang merasakan manfaat dari Hammercode.
-        </p>
+        <h2 className="text-tertiary md:text-3xl text-2xl font-bold">{t("title")}</h2>
+        <p className="md:text-base text-sm text-slate-500 dark:text-slate-400">{t("description")}</p>
       </div>
 
       <Carousel className="w-full" isDots={true}>
