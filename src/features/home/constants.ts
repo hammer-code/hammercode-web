@@ -138,7 +138,7 @@ export const testimonialData: TestimonialType[] = [
     name: "Vicky Herdiansyah Adri",
     role: "Fullstack Engineer at Pegadaian",
     quote:
-      "Di sini, saya banyak belajar tentang dunia coding dan mendapatkan mentor pertama saya. Awalnya, mereka mengajarkan seputar web development, tetapi seiring berjalannya waktu, mereka juga memberikan pembelajaran seputar karir. Hal ini sangat memotivasi saya untuk mencari pekerjaan di dunia industri sebagai software engineer. Mentor-mentor di Hammercode juga membimbing saya sampai mendapatkan my first intership :) Senang bisa menjadi bagian dari HammerCode 🥳🙏",
+      "Di sini, saya banyak belajar tentang dunia coding dan mendapatkan mentor pertama saya. Awalnya, mereka mengajarkan seputar web development, tetapi seiring berjalannya waktu, mereka juga memberikan pembelajaran seputar karir. Hal ini sangat memotivasi saya untuk mencari pekerjaan di dunia industri sebagai software engineer. Mentor-mentor di Hammercode juga membimbing saya sampai mendapatkan my first internship :) Senang bisa menjadi bagian dari HammerCode 🥳🙏",
     avatar_url: "/assets/images/peoples/vicky.webp",
   },
   {
