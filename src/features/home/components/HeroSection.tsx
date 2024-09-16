@@ -8,11 +8,11 @@ import { HandCoins } from "lucide-react";
 const HeroSection = () => {
   const t = useTranslations("HomePage");
   return (
-    <div className="max-w-7xl mx-auto px-5 py-32 flex lg:flex-row flex-col items-center gap-6 justify-between">
-      <div className="basis-1/2">
+    <div className="container py-32 flex lg:flex-row flex-col items-center gap-6 justify-between">
+      <div className="basis-[50%]">
         <div className="space-y-4">
-          <div className="space-y-1">
-            <h1 className="text-hmc-primary md:text-5xl text-3xl font-bold md:leading-[60px]">
+          <div className="space-y-1.5">
+            <h1 className="text-hmc-primary md:text-[44px] text-3xl font-bold md:leading-[60px]">
               {t("section-hero.title")}
             </h1>
             <p className="text-slate-600 dark:text-slate-400">{t("section-hero.description")}</p>
@@ -46,7 +46,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="basis-1/2">
+      <div className="basis-[50%]">
         <Image src="/assets/images/illustrations/hero-section.webp" alt="hero-section" width={1500} height={1500} />
       </div>
     </div>

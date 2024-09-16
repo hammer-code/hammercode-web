@@ -6,7 +6,7 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 
 const TestimonialSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-5 py-10 space-y-8">
+    <div className="container py-10 space-y-8">
       <div className="flex flex-col space-y-2">
         <h2 className="text-tertiary md:text-3xl text-2xl font-bold">Manfaat 🌟</h2>
         <p className="md:text-base text-sm text-slate-500 dark:text-slate-400">
