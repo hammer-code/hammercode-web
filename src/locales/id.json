@@ -1,0 +1,84 @@
+{
+  "Layout": {
+    "navbar": {
+      "link-1": "Tentang Kami",
+      "link-2": "Acara",
+      "link-3": "Kontak"
+    }
+  },
+  "LocaleLayout": {
+    "title": "Selamat Datang di Hammercode 👋",
+    "description": "Hammercode adalah komunitas teknologi yang berada di Kota Palu, Indonesia."
+  },
+  "Footer": {
+    "resource": {
+      "title": "Resources",
+      "data": [
+        {
+          "name": "Home"
+        },
+        {
+          "name": "About Us"
+        }
+      ]
+    },
+    "social_media": {
+      "title": "Ayo Bergabung dengan Kami"
+    },
+    "contact": {
+      "title": "Kontak"
+    }
+  },
+  "HomePage": {
+    "section-hero": {
+      "title": "Tingkatkan Keahlianmu dengan Kelas yang Berkualitas!",
+      "description": "Hammercode adalah komunitas teknologi yang berbasis di Palu, Indonesia",
+      "join-button": "Gabung Komunitas"
+    },
+    "section-partner": {
+      "title": "Belajar Dari Ahli Praktisi Teknologi",
+      "description": "Ambil kesempatan untuk belajar dari ekspert dari perusahaan teknologi"
+    },
+    "section-about": {
+      "title": "Siapa Kami? 🤔",
+      "sub-title": "Komunitas Untuk Memajukan Daerah.",
+      "description": "<b>Hammercode</b> adalah sebuah komunitas teknologi yang diinisiasi sebagai wadah berkumpulnya para pembelajar, programmer, dan pelaku industri teknologi lainnya yang berada di kota Palu dan sekitarnya.",
+      "view-more-button": "Lihat Lebih Detail"
+    },
+    "section-program": {
+      "title": "Program Hammercode ✨",
+      "description": "Kegiatan-kegiatan yang kami selenggarakan berorientasi pada knowledge-transfer yang diharapkan dapat mempercepat pemerataan keterampilan di bidang teknologi informasi serta mencetak talenta teknologi yang siap kerja.",
+      "programs": {
+        "01": {
+          "title": "Pendampingan",
+          "description": "Teman-teman anggota komunitas dari berbagai perusahaan teknologi siap membantu Kamu untuk persiapan aplikasi internship dan full-time job."
+        },
+        "02": {
+          "title": "Kelas & Workshop",
+          "description": "Tersedia kelas dan workshop untuk berbagai bidang, seperti web, mobile apps hingga data. Tingkat materi yang disampaikan bervariasi, mulai dari beginner hingga advanced."
+        },
+        "03": {
+          "title": "Bincang Teknologi",
+          "description": "Acara knowledge-sharing bulanan yang diisi oleh pemateri dari pelaku industri dan teman-teman komunitas."
+        }
+      }
+    },
+    "section-class": {
+      "title": "Kelas Hammercode 🔥",
+      "description": "Hammercode tempat yang cocok untukmu yang ingin belajar tentang coding/pemograman dan software engineering."
+    },
+    "section-testimonial": {
+      "title": "Manfaat 🌟",
+      "description": "Beberapa testimonial dari teman dan alumni yang merasakan manfaat dari Hammercode."
+    },
+    "section-contact": {
+      "title": "Punya pertanyaan atau ingin sekedar ngobrol? 😃",
+      "description": "Kami dengan senang hati terhubung dengan kamu. Cukup klik tombol di bawah yaa!",
+      "contact-button": "Hubungi Kami"
+    }
+  },
+  "EventsPage": {
+    "title": "Acara",
+    "description": "Ayo ikuti berbagai acara seru dan dapatkan pengalaman tak terlupakan!"
+  }
+}

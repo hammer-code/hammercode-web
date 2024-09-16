@@ -1,0 +1,84 @@
+{
+  "Layout": {
+    "navbar": {
+      "link-1": "About Us",
+      "link-2": "Events",
+      "link-3": "Contact"
+    }
+  },
+  "LocaleLayout": {
+    "title": "Welcome to Hammercode 👋",
+    "description": "Hammercode is a community based in Palu, Indonesia."
+  },
+  "Footer": {
+    "resource": {
+      "title": "Resources",
+      "data": [
+        {
+          "name": "Home"
+        },
+        {
+          "name": "About Us"
+        }
+      ]
+    },
+    "social_media": {
+      "title": "Let's Join with Us!"
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "HomePage": {
+    "section-hero": {
+      "title": "Boost Your Skills with High-Quality Classes!",
+      "description": "Hammercode is a tech community based in Palu, Indonesia",
+      "join-button": "Join Community"
+    },
+    "section-partner": {
+      "title": "Learning From Our Expert Tech",
+      "description": "Take the opportunity to learn from experts from tech companies"
+    },
+    "section-about": {
+      "title": "Who We Are? 🤔",
+      "sub-title": "Community to Advance our Hometown.",
+      "description": "<b>Hammercode</b> is tech community initiated as a place for learner, programmer, developer, and the other tech industry players at Palu and surrounding areas.",
+      "view-more-button": "View More"
+    },
+    "section-program": {
+      "title": "Hammercode Programs ✨",
+      "description": "Our activities orienting to knowledge-transfer which is expected to accelerate the distribution of skills in industry and to produce ready to work technology talents.",
+      "programs": {
+        "01": {
+          "title": "Mentoring",
+          "description": "Our community members from various tech company ready to help you with internship or full-time job application."
+        },
+        "02": {
+          "title": "Workshops & Classes",
+          "description": "Classes and workshops are available for various fields, such as the web, mobile apps to data. The level of presented material varies, from beginner to advanced."
+        },
+        "03": {
+          "title": "Tech Talk",
+          "description": "Monthly knowledge sharing activities brought by practitioner from industry and community members."
+        }
+      }
+    },
+    "section-class": {
+      "title": "Hammercode Classes 🔥",
+      "description": "Hammercode is a percect place for those to learn about coding/programming and software engineering."
+    },
+    "section-testimonial": {
+      "title": "Impact Story 🌟",
+      "description": "Some friends and alumni who feel the benefits from Hammercode."
+    },
+    "section-contact": {
+      "title": "Got any question or just want casual chit-chat? 😃",
+      "description": "We will love to be connected with you. Just hit the button below, yaa!",
+      "contact-button": "Contact Us"
+    }
+  },
+  "EventsPage": {
+    "title": "Events",
+    "description": "Join the fun events and have an unforgettable experience!"
+  }
+}
