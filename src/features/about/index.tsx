@@ -4,7 +4,7 @@ import { PROGRAM } from "./constant";
 
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto px-5 py-28">
+    <div className="container mx-auto px-5 py-28">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="md:col-span-3 space-y-4">
           <div>

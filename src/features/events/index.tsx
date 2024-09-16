@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 const Events = () => {
   const t = useTranslations("EventsPage");
   return (
-    <div className="max-w-7xl mx-auto px-5 py-28">
+    <div className="container mx-auto px-5 py-28">
       <div className="w-full rounded-lg">
         <div className="h-16 flex flex-wrap gap-1 justify-between items-center">
           <div className="">

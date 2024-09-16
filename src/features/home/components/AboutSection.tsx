@@ -8,7 +8,7 @@ const AboutSection = () => {
   const t = useTranslations("HomePage.section-about");
 
   return (
-    <div className="container lg:py-40 py-10">
+    <div className="container mx-auto lg:py-40 py-10">
       <div className="flex lg:flex-row flex-col-reverse lg:gap-16 gap-10">
         <div className="basis-1/2 relative">
           <Image

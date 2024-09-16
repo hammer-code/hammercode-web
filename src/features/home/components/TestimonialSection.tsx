@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 const TestimonialSection = () => {
   const t = useTranslations("HomePage.section-testimonial");
   return (
-    <div className="container py-10 space-y-8">
+    <div className="container mx-auto py-10 space-y-8">
       <div className="flex flex-col space-y-2">
         <h2 className="text-tertiary md:text-3xl text-2xl font-bold">{t("title")}</h2>
         <p className="md:text-base text-sm text-slate-500 dark:text-slate-400">{t("description")}</p>

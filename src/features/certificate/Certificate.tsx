@@ -17,7 +17,9 @@ const Certificate = ({ certificate }: Props) => {
           <h3 className="text-hmc-primary md:text-2xl text-xl font-semibold text-center">
             Terima Kasih kepada <strong className="font-extrabold">{name}</strong>!
           </h3>
-          <p className="md:text-base text-sm text-center text-gray-500">Kamu telah berpartisipasi dalam acara ini.</p>
+          <p className="md:text-base text-sm text-center text-slate-500 dark:text-slate-400">
+            Kamu telah berpartisipasi dalam acara ini.
+          </p>
         </div>
         <div className="w-full h-full relative">
           <div className="flex justify-center">
@@ -29,7 +31,7 @@ const Certificate = ({ certificate }: Props) => {
               alt={`Sertikat ${event} - ${name}`}
             />
           </div>
-          <p className="md:text-base text-sm text-center text-gray-500 mb-8">
+          <p className="md:text-base text-sm text-center text-slate-500 dark:text-slate-400 mb-8">
             Sertifikat : <b>{_id}</b>
           </p>
 
@@ -41,8 +43,8 @@ const Certificate = ({ certificate }: Props) => {
             </Button>
           </div>
           <div>
-            <p className="md:text-base text-sm text-center text-gray-500 my-4">
-              <strong className="md:text-lg text-md text-black">Pamerkan</strong> sertifikat ini ke teman-temanmu!
+            <p className="md:text-base text-sm text-center text-slate-500 dark:text-slate-400 my-4">
+              <strong className="md:text-lg text-md">Pamerkan</strong> sertifikat ini ke teman-temanmu!
             </p>
 
             <div className="flex justify-center space-x-6">

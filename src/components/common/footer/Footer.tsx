@@ -1,7 +1,6 @@
 import React from "react";
 import { dataFooter } from "./constants";
 import { Link } from "@/lib/navigation";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
@@ -14,9 +13,9 @@ const Footer = () => {
   return (
     <>
       <div className="space-y-8 border-t border-dashed">
-        <div className="max-w-7xl mx-auto px-5 py-10">
+        <div className="container mx-auto px-5 py-10">
           <div className="flex md:flex-row flex-col justify-between md:items-start items-center gap-10">
-            <Image src="/assets/icons/ic_hmc-full.svg" alt="hammercode-logo" width={100} height={100} />
+            <div className="w-28 h-24 bg-[url('/assets/icons/ic_hmc-full.svg')] dark:bg-[url('/assets/icons/ic_hmc-full-dark.svg')] bg-cover bg-center"></div>
 
             {/* Resources */}
             <div className="flex flex-col md:items-start items-center gap-3">
