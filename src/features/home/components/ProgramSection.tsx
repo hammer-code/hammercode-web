@@ -2,16 +2,17 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import Image from "next/image";
 import { programData } from "../constants";
+import { useTranslations } from "next-intl";
 
 const ProgramSection = () => {
+  const t = useTranslations("HomePage.section-program");
+
   return (
     <div className="container py-10 space-y-8">
       <div className="flex flex-col gap-4">
-        <h2 className="text-tertiary md:text-3xl text-2xl font-bold">Program Hammercode ✨</h2>
+        <h2 className="text-tertiary md:text-3xl text-2xl font-bold">{t("title")}</h2>
         <p className="max-w-3xl md:text-base text-sm text-slate-500 dark:text-slate-400 md:leading-7">
-          Kegiatan-kegiatan yang kami selenggarakan berorientasi pada knowledge-transfer yang diharapkan dapat
-          mempercepat pemerataan keterampilan di bidang teknologi informasi serta mencetak talenta teknologi yang siap
-          kerja.
+          {t("description")}
         </p>
       </div>
 
@@ -44,9 +45,9 @@ const ProgramSection = () => {
                 <div className="bg-sky-100 dark:bg-sky-900 p-2 w-9 h-9 text-sm text-hmc-primary flex justify-center items-center rounded-lg">
                   {data.id}
                 </div>
-                <h3 className="text-xl text-center font-semibold">{data.title}</h3>
+                <h3 className="text-xl text-center font-semibold">{t(`programs.${data.id}.title`)}</h3>
                 <p className="md:text-sm text-sm text-center text-slate-500 dark:text-slate-400 md:leading-6">
-                  {data.description}
+                  {t(`programs.${data.id}.description`)}
                 </p>
               </div>
             </CardContent>

@@ -4,15 +4,13 @@ import { useTranslations } from "next-intl";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const PartnerSection = () => {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("HomePage.section-partner");
   return (
     <div className="bg-sky-50 dark:bg-slate-900">
       <div className="container md:py-14 py-10 my-10 space-y-8">
         <div className="flex flex-col items-center gap-2">
-          <h2 className="text-tertiary md:text-3xl text-2xl font-bold">{t("section-partner.title")}</h2>
-          <p className="md:text-base text-sm text-slate-500 dark:text-slate-400 md:text-center">
-            {t("section-partner.description")}
-          </p>
+          <h2 className="text-tertiary md:text-3xl text-2xl font-bold">{t("title")}</h2>
+          <p className="md:text-base text-sm text-slate-500 dark:text-slate-400 md:text-center">{t("description")}</p>
         </div>
 
         <div className="px-12 md:px-12">

@@ -3,10 +3,14 @@ import { dataFooter } from "./constants";
 import { Link } from "@/lib/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const date = new Date();
   const { resource, social_media, contact } = dataFooter;
+
+  const t = useTranslations("Footer");
+
   return (
     <>
       <div className="space-y-8 border-t border-dashed">
@@ -16,15 +20,15 @@ const Footer = () => {
 
             {/* Resources */}
             <div className="flex flex-col md:items-start items-center gap-3">
-              <h3 className="text-lg text-hmc-primary font-semibold">{resource.title}</h3>
+              <h3 className="text-lg text-hmc-primary font-semibold">{t("resource.title")}</h3>
               <div className="flex flex-col md:items-start items-center gap-1">
-                {resource.data.map((data) => (
+                {resource.data.map((data, index) => (
                   <Link
                     key={data.navigate_url}
                     href={data.navigate_url}
                     className="md:text-sm text-xs text-slate-600 dark:text-slate-400 hover:opacity-80 hover:underline"
                   >
-                    {data.name}
+                    {t(`resource.data.${index}.name`)}
                   </Link>
                 ))}
               </div>
@@ -32,7 +36,7 @@ const Footer = () => {
 
             {/* Social Media */}
             <div className="flex flex-col md:items-start items-center gap-3">
-              <h3 className="text-lg text-hmc-primary font-semibold">{social_media.title}</h3>
+              <h3 className="text-lg text-hmc-primary font-semibold">{t("social_media.title")}</h3>
               <div className="flex flex-col md:items-start items-center gap-1">
                 {social_media.data.map((data) => (
                   <Link
@@ -48,7 +52,7 @@ const Footer = () => {
 
             {/* Contact */}
             <div className="flex flex-col md:items-start items-center gap-3">
-              <h3 className="text-lg text-hmc-primary font-semibold">{contact.title}</h3>
+              <h3 className="text-lg text-hmc-primary font-semibold">{t("contact.title")}</h3>
               <div className="flex flex-col md:items-start items-center gap-1">
                 {contact.data.map((data) => (
                   <Button
@@ -66,7 +70,9 @@ const Footer = () => {
         </div>
       </div>
       <footer className="bg-slate-950 dark:bg-slate-950 p-8">
-        <p className="text-center text-white">{date.getFullYear()} © Penggiat Teknologi Palu Berkarya</p>
+        <p className="md:text-sm text-xs text-center text-white">
+          {date.getFullYear()} © Penggiat Teknologi Palu Berkarya
+        </p>
       </footer>
     </>
   );
