@@ -1,7 +1,7 @@
 {
   "Layout": {
     "navbar": {
-      "link-1": "About",
+      "link-1": "About Us",
       "link-2": "Events",
       "link-3": "Contact"
     }
@@ -12,7 +12,7 @@
   },
   "HomePage": {
     "section-hero": {
-      "title": "Improve Your Skill by Talking High-Quality Classes with Us!",
+      "title": "Boost Your Skills with High-Quality Classes!",
       "description": "Hammercode is a tech community based in Palu, Indonesia",
       "join-button": "Join Community"
     },

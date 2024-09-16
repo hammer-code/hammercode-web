@@ -11,13 +11,13 @@ const Footer = () => {
     <>
       <div className="space-y-8 border-t border-dashed">
         <div className="max-w-7xl mx-auto px-5 py-10">
-          <div className="flex justify-between items-start gap-10">
+          <div className="flex md:flex-row flex-col justify-between md:items-start items-center gap-10">
             <Image src="/assets/icons/ic_hmc-full.svg" alt="hammercode-logo" width={100} height={100} />
 
             {/* Resources */}
-            <div className="space-y-3">
+            <div className="flex flex-col md:items-start items-center gap-3">
               <h3 className="text-lg text-hmc-primary font-semibold">{resource.title}</h3>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col md:items-start items-center gap-1">
                 {resource.data.map((data) => (
                   <Link
                     key={data.navigate_url}
@@ -31,9 +31,9 @@ const Footer = () => {
             </div>
 
             {/* Social Media */}
-            <div className="space-y-3">
+            <div className="flex flex-col md:items-start items-center gap-3">
               <h3 className="text-lg text-hmc-primary font-semibold">{social_media.title}</h3>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col md:items-start items-center gap-1">
                 {social_media.data.map((data) => (
                   <Link
                     key={data.navigate_url}
@@ -47,9 +47,9 @@ const Footer = () => {
             </div>
 
             {/* Contact */}
-            <div className="space-y-3">
+            <div className="flex flex-col md:items-start items-center gap-3">
               <h3 className="text-lg text-hmc-primary font-semibold">{contact.title}</h3>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col md:items-start items-center gap-1">
                 {contact.data.map((data) => (
                   <Button
                     key={data.navigate_url}

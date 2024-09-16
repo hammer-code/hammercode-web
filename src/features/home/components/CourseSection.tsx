@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 const ClassSection = () => {
   return (
     <div className="bg-sky-50 dark:bg-slate-900">
-      <div className="max-w-7xl mx-auto px-5 md:py-14 py-10 my-10 space-y-6">
+      <div className="container md:py-14 py-10 my-10 space-y-6">
         <div className="flex flex-col items-center gap-2">
           <h2 className="text-tertiary md:text-3xl text-2xl font-bold">Kelas Hammercode 🔥</h2>
           <p className="max-w-3xl md:text-base text-center text-sm text-slate-500 dark:text-slate-400 md:leading-7">

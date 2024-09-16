@@ -5,7 +5,7 @@ import { programData } from "../constants";
 
 const ProgramSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-5 py-10 space-y-8">
+    <div className="container py-10 space-y-8">
       <div className="flex flex-col gap-4">
         <h2 className="text-tertiary md:text-3xl text-2xl font-bold">Program Hammercode ✨</h2>
         <p className="max-w-3xl md:text-base text-sm text-slate-500 dark:text-slate-400 md:leading-7">
