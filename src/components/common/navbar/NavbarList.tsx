@@ -6,7 +6,7 @@ export type NavbarListProps<Pathname extends keyof typeof pathnames> = Component
 
 function NavbarList<Pathname extends keyof typeof pathnames>({ href, ...rest }: NavbarListProps<Pathname>) {
   return (
-    <Link href={href}>
+    <Link href={href} className="md:block hidden">
       <span>{rest.title}</span>
     </Link>
   );
