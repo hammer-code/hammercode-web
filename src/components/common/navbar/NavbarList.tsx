@@ -4,9 +4,9 @@ import { pathnames } from "@/lib/config";
 
 export type NavbarListProps<Pathname extends keyof typeof pathnames> = ComponentProps<typeof Link<Pathname>>;
 
-function NavbarList<Pathname extends keyof typeof pathnames>({ href, ...rest }: NavbarListProps<Pathname>) {
+function NavbarList<Pathname extends keyof typeof pathnames>({ href, onClick, ...rest }: NavbarListProps<Pathname>) {
   return (
-    <Link href={href} className="md:block hidden">
+    <Link href={href} onClick={onClick}>
       <span>{rest.title}</span>
     </Link>
   );
