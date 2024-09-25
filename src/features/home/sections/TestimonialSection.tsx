@@ -1,9 +1,13 @@
 import React from "react";
-import { testimonialData } from "../constants";
-import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { useTranslations } from "next-intl";
+
+import { Card, CardFooter, CardHeader } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+
+import DetailTestimoni from "../components/DetailTestimoni";
+import { testimonialData } from "../constants";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 
 const TestimonialSection = () => {
   const t = useTranslations("HomePage.section-testimonial");
@@ -21,7 +25,12 @@ const TestimonialSection = () => {
               <Card>
                 <CardHeader className="space-y-4">
                   <Image src="/assets/icons/ic_qoute.svg" alt="quote" width={24} height={24} />
-                  <p className="sm:text-sm text-xs text-slate-500 dark:text-slate-400 sm:leading-6 leading-5">{`"${data.quote}"`}</p>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <p className="sm:text-sm text-xs text-slate-500 dark:text-slate-400 sm:leading-6 leading-5 line-clamp-3 cursor-pointer">{`"${data.quote}"`}</p>
+                    </DialogTrigger>
+                    <DetailTestimoni data={data} />
+                  </Dialog>
                 </CardHeader>
                 <CardFooter className="flex md:flex-row flex-col md:items-center items-start gap-2">
                   <Image
