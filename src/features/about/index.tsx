@@ -1,12 +1,12 @@
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { PROGRAM } from "./constant";
+import ImagesList from "./components/ImagesList";
+import OurFounder from "./components/OurFounder";
+import OurProgram from "./components/OurProgram";
 
 const About = () => {
   return (
     <div className="container mx-auto px-5 py-28">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div className="md:col-span-3 space-y-4">
+        <div className="md:col-span-3 space-y-4 text-justify">
           <div>
             <h1 className="text-3xl font-bold mb-2 text-hmc-base-blue">About Hammercode</h1>
             <p className="text-sm text-gray-500">Since 2017 - Now</p>
@@ -19,36 +19,25 @@ const About = () => {
             di bidang teknologi informasi serta mencetak talenta teknologi yang siap kerja. Hammercode tempat yang cocok
             untukmu yang ingin belajar tentang coding/pemograman dan software engineering.
           </p>
-          <Image
-            src="https://media.istockphoto.com/id/1410270664/photo/modern-style-office-with-exposed-concrete-floor-and-a-lot-of-plants.jpg?s=612x612&w=0&k=20&c=lBivR3vIWH4dnb6MUNkQtQsIisaUEnzl2f6Ozyr-Jis="
-            width={200}
-            height={100}
-            className="w-full h-30 rounded-md shadow-lg border"
-            alt="hmc"
-          />
+          <ImagesList />
           <p>
             Kebutuhan akan talenta teknologi berkualitas terus bertambah. Namun sayangnya gap skills yang dimiliki oleh
             lulusan IT dari universitas dan kebutuhan industri masih cukup besar. Di pulau Jawa dan Sumatera, banyak
             universitas universitas top-level serta ekosistem komunitas dan industri yang lebih maju di banding daerah
-            lain, khususnya Palu, Sulawesi Tengah.
+            lain, khususnya Palu, Sulawesi Tengah. Kami di Hammercode berkomitmen untuk menjembatani kesenjangan
+            tersebut dengan menyediakan akses ke pendidikan dan pelatihan berkualitas. Kami percaya bahwa dengan
+            memberikan dukungan dan sumber daya yang tepat, kami dapat membantu anggota kami untuk tidak hanya memenuhi
+            kebutuhan industri, tetapi juga untuk menjadi inovator dan pemimpin di masa depan.
+          </p>
+          <p>
+            Mari bergabung dengan kami di Hammercode dan jadi bagian dari perubahan positif di komunitas teknologi Palu.
+            Bersama-sama, kita bisa menciptakan masa depan yang lebih cerah bagi generasi mendatang.
           </p>
         </div>
 
-        <div className="md:col-span-1">
-          <Card className="p-4 space-y-4">
-            <h2 className="text-xl font-semibold text-hmc-primary">Our Program</h2>
-            {PROGRAM.map(({ id, title, desc, icon }) => (
-              <CardContent key={id} className="p-0 flex items-center gap-2">
-                <div>
-                  <Card className="w-12 h-12 rounded-full flex items-center justify-center">{icon}</Card>
-                </div>
-                <div>
-                  <h3 className="text-md font-semibold">{title}</h3>
-                  <p className="text-sm text-gray-500">{desc}</p>
-                </div>
-              </CardContent>
-            ))}
-          </Card>
+        <div className="md:col-span-1 space-y-4">
+          <OurFounder />
+          <OurProgram />
         </div>
       </div>
     </div>
