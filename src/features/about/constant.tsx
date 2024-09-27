@@ -5,13 +5,13 @@ export const PROGRAM = [
   {
     id: 1,
     title: "Palu Developer Day",
-    desc: "Event Tahunan",
+    desc: "Yearly Event",
     icon: <CodeXml />,
   },
   {
     id: 2,
     title: "Tech Talk",
-    desc: "Event Bulanan",
+    desc: "Monthly Event",
     icon: <Laptop />,
   },
   {

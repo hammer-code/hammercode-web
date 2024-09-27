@@ -1,16 +1,18 @@
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Linkedin, Mail } from "lucide-react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { FOUNDERS } from "../constant";
-import Link from "next/link";
 
 const OurFounder: FC = () => {
+  const t = useTranslations("AboutPage");
   return (
     <Card className="p-4 space-y-4">
-      <h2 className="text-2xl font-semibold text-hmc-primary">Our Founder</h2>
+      <h2 className="text-2xl font-semibold text-hmc-primary">{t("side.title-1")}</h2>
       {FOUNDERS.map(({ id, image, name, linkedin, email }) => (
         <CardContent key={id} className="p-0 flex justify-center flex-col gap-4">
           <div className="flex flex-row items-center gap-4">

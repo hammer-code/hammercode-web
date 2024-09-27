@@ -1,11 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { PROGRAM } from "../constant";
 import { FC } from "react";
+import { useTranslations } from "next-intl";
 
 const OurProgram: FC = () => {
+  const t = useTranslations("AboutPage");
   return (
     <Card className="p-4 space-y-4">
-      <h2 className="text-2xl font-semibold text-hmc-primary">Our Program</h2>
+      <h2 className="text-2xl font-semibold text-hmc-primary">{t("side.title-2")}</h2>
       {PROGRAM.map(({ id, title, desc, icon }) => (
         <CardContent key={id} className="p-0 flex items-center gap-2">
           <div>
