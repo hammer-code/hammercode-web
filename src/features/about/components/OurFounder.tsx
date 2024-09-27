@@ -11,7 +11,7 @@ const OurFounder: FC = () => {
   return (
     <Card className="p-4 space-y-4">
       <h2 className="text-2xl font-semibold text-hmc-primary">Our Founder</h2>
-      {FOUNDERS.map(({ id, image, role, name, linkedin, email }) => (
+      {FOUNDERS.map(({ id, image, name, linkedin, email }) => (
         <CardContent key={id} className="p-0 flex justify-center flex-col gap-4">
           <div className="flex flex-row items-center gap-4">
             <Image
@@ -21,9 +21,9 @@ const OurFounder: FC = () => {
               height={512}
               className="lg:w-14 w-16 lg:h-14 h-16 object-cover border-2 rounded-full"
             />
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col">
               <h3>{name}</h3>
-              <p className="sm:text-sm text-xs text-slate-400 dark:text-slate-400">{role}</p>
+              {/* <p className="sm:text-sm text-xs text-slate-400 dark:text-slate-400">{role}</p> */}
               <div className="flex mt-2 space-x-2">
                 <Link href={linkedin} target="_blank">
                   <Badge>

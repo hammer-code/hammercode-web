@@ -1,6 +1,8 @@
+import { Badge } from "@/components/ui/badge";
 import ImagesList from "./components/ImagesList";
 import OurFounder from "./components/OurFounder";
 import OurProgram from "./components/OurProgram";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -29,10 +31,36 @@ const About = () => {
             memberikan dukungan dan sumber daya yang tepat, kami dapat membantu anggota kami untuk tidak hanya memenuhi
             kebutuhan industri, tetapi juga untuk menjadi inovator dan pemimpin di masa depan.
           </p>
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <Image
+              src="/assets/images/about/meet-1.png"
+              alt="meet"
+              width={500}
+              height={100}
+              className="md:w-2/3 w-full h-auto rounded-lg shadow-lg"
+            />
+            <p className="md:w-2/3 w-full">
+              Kami juga memiliki beberapa program unggulan, antara lain Palu Developer Day, yang merupakan program
+              tahunan teknologi terbesar di Kota Palu dan dihadiri oleh pemateri hebat. Selain itu, ada juga Tech Talk,
+              yaitu sebuah acara bulanan yang dihadiri oleh narasumber dari komunitas yang membahas berbagai topik
+              seputar bidang teknologi. Kami juga mengadakan Live Tech, yang merupakan event live di Instagram, di mana
+              para ahli berbagi wawasan dan pengalaman mereka. Terakhir, kami melaksanakan program pembelajaran setiap
+              minggu yang fokus pada pengembangan web.
+            </p>
+          </div>
           <p>
-            Mari bergabung dengan kami di Hammercode dan jadi bagian dari perubahan positif di komunitas teknologi Palu.
-            Bersama-sama, kita bisa menciptakan masa depan yang lebih cerah bagi generasi mendatang.
+            Yuk, gabung dengan Hammercode dan jadi bagian dari perubahan positif di komunitas teknologi Palu!
+            Bareng-bareng, kita bisa menciptakan masa depan yang lebih cerah lewat keterampilan dan inovasi. Di sini,
+            kamu bakal dapetin dukungan penuh, program pengembangan, dan komunitas yang asik buat ngebantu kamu tumbuh
+            jadi orang yang siap bersaing di dunia teknologi. Hammercode adalah tempat yang pas buat kamu yang pengen
+            mempercepat karier di bidang teknologi sekaligus bikin dampak nyata buat Palu dan sekitarnya😊🔥.
           </p>
+          <div className="flex gap-2">
+            <Badge className="dark:text-white rounded-md bg-hmc-base-darkblue dark:bg-hmc-base-blue">
+              #SiapBerkarirDibidangIT
+            </Badge>
+            <Badge className="dark:text-white rounded-md bg-hmc-base-darkblue dark:bg-hmc-base-blue">#HammerCode</Badge>
+          </div>
         </div>
 
         <div className="md:col-span-1 space-y-4">
