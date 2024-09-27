@@ -53,6 +53,7 @@ export const FOUNDERS: FoundersType[] = [
     name: "Muhammad Rizki Rijal",
     role: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/muhammadrizkirijal/",
+    email: "mailto:arkinthesky.69@gmail.com",
   },
   {
     id: 2,
@@ -60,5 +61,6 @@ export const FOUNDERS: FoundersType[] = [
     name: "Muhammad Nur Abdi Pratama",
     role: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/muhnurabdipratama/",
+    email: "mailto:mnur.abdipratama@gmail.com",
   },
 ];

@@ -10,4 +10,5 @@ export type FoundersType = {
   name: string;
   role: string;
   linkedin: string;
+  email: string;
 };
