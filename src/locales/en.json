@@ -31,7 +31,7 @@
   },
   "HomePage": {
     "section-hero": {
-      "title": "Boost Your Skills with High-Quality Classes! STG",
+      "title": "Boost Your Skills with High-Quality Classes!",
       "description": "Hammercode is a tech community based in Palu, Indonesia",
       "join-button": "Join Community"
     },
@@ -80,5 +80,23 @@
   "EventsPage": {
     "title": "Events",
     "description": "Join the fun events and have an unforgettable experience!"
+  },
+  "AboutPage": {
+    "title": "About Hammercode",
+    "description": "Since 2017 - Now",
+    "text": {
+      "1": "is a technology community that was initiated as a gathering place for learners, programmers, web/mobile developers, and other technology industry players in the city of Palu and its surroundings. The activities that we organize are oriented towards knowledge-transfer which is expected to accelerate the distribution of skills in the field of information technology and produce job-ready technology talents. Hammercode is the perfect place for those of you who want to learn about coding / programming and software engineering.",
+      "2": "The need for quality technology talent continues to grow. Unfortunately, the gap between the skills possessed by IT graduates from universities and the needs of the industry is still quite large. On the islands of Java and Sumatra, many top-level universities and community and industry ecosystems are more advanced than other regions, especially Palu, Central Sulawesi. We at Hammercode are committed to bridging the gap by providing access to quality education and training. We believe that by providing the right support and resources, we can help our members to not only meet the needs of the industry, but also to become the innovators and leaders of the future.",
+      "3": "We also have several excellent programs, including Palu Developer Day, which is the largest annual technology program in Palu City and is attended by great presenters. In addition, there is also Tech Talk, which is a monthly event attended by speakers from the community who discuss various topics around the field of technology. We also hold Live Tech, which is a live event on Instagram, where experts share their insights and experiences. Lastly, we run a weekly learning program that focuses on web development.",
+      "4": "Join Hammercode and be a part of positive change in Palu tech community! Together, we can create a brighter future through skills and innovation. Here, you will get full support, development programs, and a fun community to help you grow into a person who is ready to compete in the world of technology. Hammercode is the perfect place for those of you who want to accelerate your career in tech while making a real impact on Palu and beyond😊🔥."
+    },
+    "side": {
+      "title-1": "Our Facilitators",
+      "title-2": "Our Program",
+      "event-1": "Yearly Event",
+      "event-2": "Monthly Event",
+      "event-3": "Instagram Live",
+      "event-4": "Weekly Lesson"
+    }
   }
 }

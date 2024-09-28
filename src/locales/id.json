@@ -80,5 +80,23 @@
   "EventsPage": {
     "title": "Acara",
     "description": "Ayo ikuti berbagai acara seru dan dapatkan pengalaman tak terlupakan!"
+  },
+  "AboutPage": {
+    "title": "Tentang Hammercode",
+    "description": "Sejak 2017 - Sekarang",
+    "text": {
+      "1": "adalah sebuah komunitas teknologi yang diinisiasi sebagai wadah berkumpulnya para pembelajar, programmer, web/mobile developer, dan pelaku industri teknologi lainnya yang berada di kota Palu dan sekitarnya. Kegiatan-kegiatan yang Kami selenggarakan berorientasi pada knowledge-transfer yang diharapkan dapat mempercepat pemerataan keterampilan di bidang teknologi informasi serta mencetak talenta teknologi yang siap kerja. Hammercode tempat yang cocok untukmu yang ingin belajar tentang coding/pemograman dan software engineering.",
+      "2": "Kebutuhan akan talenta teknologi berkualitas terus bertambah. Namun sayangnya gap skills yang dimiliki oleh lulusan IT dari universitas dan kebutuhan industri masih cukup besar. Di pulau Jawa dan Sumatera, banyak universitas universitas top-level serta ekosistem komunitas dan industri yang lebih maju di banding daerah lain, khususnya Palu, Sulawesi Tengah. Kami di Hammercode berkomitmen untuk menjembatani kesenjangan tersebut dengan menyediakan akses ke pendidikan dan pelatihan berkualitas. Kami percaya bahwa dengan memberikan dukungan dan sumber daya yang tepat, kami dapat membantu anggota kami untuk tidak hanya memenuhi             kebutuhan industri, tetapi juga untuk menjadi inovator dan pemimpin di masa depan.",
+      "3": "Kami juga memiliki beberapa program unggulan, antara lain Palu Developer Day, yang merupakan program tahunan teknologi terbesar di Kota Palu dan dihadiri oleh pemateri hebat. Selain itu, ada juga Tech Talk, yaitu sebuah acara bulanan yang dihadiri oleh narasumber dari komunitas yang membahas berbagai topik seputar bidang teknologi. Kami juga mengadakan Live Tech, yang merupakan event live di Instagram, di mana para ahli berbagi wawasan dan pengalaman mereka. Terakhir, kami melaksanakan program pembelajaran setiap minggu yang fokus pada pengembangan web.",
+      "4": "Yuk, gabung dengan Hammercode dan jadi bagian dari perubahan positif di komunitas teknologi Palu! Bareng-bareng, kita bisa menciptakan masa depan yang lebih cerah lewat keterampilan dan inovasi. Di sini, kamu bakal dapetin dukungan penuh, program pengembangan, dan komunitas yang asik buat ngebantu kamu tumbuh jadi orang yang siap bersaing di dunia teknologi. Hammercode adalah tempat yang pas buat kamu yang pengen mempercepat karier di bidang teknologi sekaligus bikin dampak nyata buat Palu dan sekitarnya😊🔥."
+    },
+    "side": {
+      "title-1": "Fasilitator Kami",
+      "title-2": "Program Kami",
+      "event-1": "Acara Tahunan",
+      "event-2": "Acara Bulanan",
+      "event-3": "Siaran Langsung Instagram",
+      "event-4": "Pembelajaran Mingguan"
+    }
   }
 }

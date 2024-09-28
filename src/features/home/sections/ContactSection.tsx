@@ -7,7 +7,7 @@ const ContactSection = () => {
   const t = useTranslations("HomePage.section-contact");
 
   return (
-    <div className="container py-10">
+    <div className="container mx-auto py-10">
       <div className="flex flex-col items-center md:gap-8 gap-6">
         <div className="flex flex-col items-center gap-2">
           <h2 className="text-tertiary md:text-3xl text-2xl text-center font-bold">{t("title")}</h2>

@@ -20,15 +20,21 @@ export const socialMedia: SocialMediaType[] = [
 
 export const partnersData: PartnerType[] = [
   {
-    id: 1,
-    logo: "/assets/images/logos/shipper-logo.png",
-    alt: "Shipper Logo",
-  },
-  {
     id: 2,
     logo: "/assets/images/logos/efishery-logo.png",
     alt: "Efishery Logo",
   },
+  {
+    id: 0,
+    logo: "/assets/images/logos/educourse-logo.png",
+    alt: "Educourse Logo",
+  },
+  {
+    id: 1,
+    logo: "/assets/images/logos/shipper-logo.png",
+    alt: "Shipper Logo",
+  },
+
   {
     id: 3,
     logo: "/assets/images/logos/icehouse-logo.png",
@@ -38,6 +44,26 @@ export const partnersData: PartnerType[] = [
     id: 4,
     logo: "/assets/images/logos/warungpintar-logo.png",
     alt: "Warung Pintar Logo",
+  },
+  {
+    id: 5,
+    logo: "/assets/images/logos/telkom-logo.png",
+    alt: "Telkom Logo",
+  },
+  {
+    id: 6,
+    logo: "/assets/images/logos/bareksa-logo.png",
+    alt: "Bareksa Logo",
+  },
+  {
+    id: 7,
+    logo: "/assets/images/logos/pddikti-logo.png",
+    alt: "PDDikti Logo",
+  },
+  {
+    id: 8,
+    logo: "/assets/images/logos/satudikti-logo.png",
+    alt: "Satudikti Logo",
   },
 ];
 
@@ -138,7 +164,7 @@ export const testimonialData: TestimonialType[] = [
     name: "Vicky Herdiansyah Adri",
     role: "Fullstack Engineer at Pegadaian",
     quote:
-      "Di sini, saya banyak belajar tentang dunia coding dan mendapatkan mentor pertama saya. Awalnya, mereka mengajarkan seputar web development, tetapi seiring berjalannya waktu, mereka juga memberikan pembelajaran seputar karir. Hal ini sangat memotivasi saya untuk mencari pekerjaan di dunia industri sebagai software engineer. Mentor-mentor di Hammercode juga membimbing saya sampai mendapatkan my first intership :) Senang bisa menjadi bagian dari HammerCode 🥳🙏",
+      "Di sini, saya banyak belajar tentang dunia coding dan mendapatkan mentor pertama saya. Awalnya, mereka mengajarkan seputar web development, tetapi seiring berjalannya waktu, mereka juga memberikan pembelajaran seputar karir. Hal ini sangat memotivasi saya untuk mencari pekerjaan di dunia industri sebagai software engineer. Mentor-mentor di Hammercode juga membimbing saya sampai mendapatkan my first internship :) Senang bisa menjadi bagian dari HammerCode 🥳🙏",
     avatar_url: "/assets/images/peoples/vicky.webp",
   },
   {
