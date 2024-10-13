@@ -4,6 +4,11 @@
       "link-1": "About Us",
       "link-2": "Events",
       "link-3": "Contact"
+    },
+    "breadcrumb": {
+      "link-1": "About Us",
+      "link-2": "Events",
+      "link-3": "Contact"
     }
   },
   "LocaleLayout": {
@@ -79,7 +84,13 @@
   },
   "EventsPage": {
     "title": "Events",
-    "description": "Join the fun events and have an unforgettable experience!"
+    "description": "Join the fun events and have an unforgettable experience!",
+    "EventDetail": {
+      "organized-by": "Organized By:",
+      "desc-title": "Description",
+      "price-title": "Price starts from",
+      "register-button": "Regist Now"
+    }
   },
   "AboutPage": {
     "title": "About Hammercode",

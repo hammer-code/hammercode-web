@@ -2,7 +2,7 @@ type EventTypes = "Workshop" | "TechTalk" | "dll";
 type EventStatus = "open" | "soon" | "closed";
 
 export type EventType = {
-  id: string;
+  id: number;
   title: string;
   description: string;
   author: string;
@@ -18,4 +18,10 @@ export type EventType = {
   registration_link?: string;
   speakers?: string[];
   status: EventStatus;
+  price?: number;
+};
+
+export type EventInfoType = {
+  id: number;
+  icon: React.ReactNode;
 };
