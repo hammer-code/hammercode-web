@@ -4,6 +4,11 @@
       "link-1": "Tentang Kami",
       "link-2": "Acara",
       "link-3": "Kontak"
+    },
+    "breadcrumb": {
+      "link-1": "Tentang Kami",
+      "link-2": "Acara",
+      "link-3": "Kontak"
     }
   },
   "LocaleLayout": {
@@ -79,7 +84,13 @@
   },
   "EventsPage": {
     "title": "Acara",
-    "description": "Ayo ikuti berbagai acara seru dan dapatkan pengalaman tak terlupakan!"
+    "description": "Ayo ikuti berbagai acara seru dan dapatkan pengalaman tak terlupakan!",
+    "EventDetail": {
+      "organized-by": "Diselenggarakan Oleh:",
+      "desc-title": "Deskripsi",
+      "price-title": "Harga mulai dari",
+      "register-button": "Daftar Sekarang"
+    }
   },
   "AboutPage": {
     "title": "Tentang Hammercode",

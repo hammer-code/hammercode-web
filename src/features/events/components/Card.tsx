@@ -1,45 +1,48 @@
-import { CSSProperties, FC } from "react";
+import { FC } from "react";
+import Image from "next/image";
 import { Clock, Pin } from "lucide-react";
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { useFormatDate } from "@/lib/utils";
 import { EventType } from "../types";
-import Image from "next/image";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const CardEvent: FC<{ data: EventType }> = ({ data }) => {
-  const { id, title, date_event, status, duration, location, image_event } = data;
+  const { title, date_event, status, duration, location } = data;
   return (
-    <Card
-      key={id}
-      className={`flex ${id === "1" ? "flex-col col-span-2 min-h-60" : "flex-col min-h-28"} border rounded-lg shadow-md bg-cover bg-center bg-[image:var(--image-url)] md:bg-none`}
-      style={{ "--image-url": `url(${image_event})` } as CSSProperties}
-    >
+    <Card className="flex flex-col size-full border rounded-lg shadow-md">
       <Image
-        src={image_event}
+        // TODO: replace src url from image_event
+        src="/assets/images/events/pdd2024.webp"
         alt={title}
-        width={150}
-        height={150}
-        className="w-full hidden md:block rounded-t-lg object-cover h-60"
+        width={540}
+        height={240}
+        className="object-cover object-center w-full h-40 rounded-t-lg md:h-64"
       />
-      <div className="w-full py-4 bg-background/60">
-        <CardContent className="pb-0">
-          <Badge className="mb-2" variant={`${status}`}>
-            {status}
-          </Badge>
-          <h2 className="text-base sm:text-xl font-bold text-hmc-blue-600">{title}</h2>
-          <p>{date_event}</p>
-        </CardContent>
-        <CardFooter className="flex flex-wrap gap-2 mt-2 pb-2 sm:flex-row">
-          <div className="flex items-center gap-2">
-            <Clock size={15} />
-            <p className="text-sm text-nowrap">{duration}</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Pin size={15} />
-            <p className="text-sm text-nowrap">{location}</p>
-          </div>
-        </CardFooter>
-      </div>
+      <CardContent className="px-4 pt-4 pb-0">
+        <Badge className="mb-2" variant={`${status}`}>
+          {status}
+        </Badge>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <h2 className="text-base font-bold text-hmc-blue-600 line-clamp-2 sm:text-xl">{title}</h2>
+            </TooltipTrigger>
+            <TooltipContent>{title}</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </CardContent>
+      <CardFooter className="flex flex-col items-start gap-2 px-4 pt-3 pb-4 mt-auto">
+        <p className="line-clamp-1">{useFormatDate(date_event)}</p>
+        <div className="flex items-center gap-2">
+          <Clock size={15} />
+          <p className="text-sm">{duration}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <Pin size={15} />
+          <p className="text-sm">{location}</p>
+        </div>
+      </CardFooter>
     </Card>
   );
 };

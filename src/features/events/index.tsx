@@ -1,11 +1,25 @@
 "use client";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { eventsData } from "./constants";
-import CardEvent from "./components/Card";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { eventsService } from "@/services/events";
+import CardEvent from "./components/Card";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { EventType } from "./types";
+import { eventsData } from "./constants";
 
 const Events = () => {
   const t = useTranslations("EventsPage");
+  const [events, setEvents] = useState<EventType[]>([]);
+  const handleGetEvents = async () => {
+    const res = await eventsService.getEvents("");
+    setEvents(res.data);
+  };
+
+  useEffect(() => {
+    handleGetEvents();
+  }, []);
+
   return (
     <div className="container mx-auto px-5 py-28">
       <div className="w-full rounded-lg">
@@ -31,10 +45,21 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="py-8">
-        <div className="grid grid-cols-1 gap-x-4 gap-y-8 lg:grid-cols-4">
+      <div className="pt-16 md:pt-8">
+        <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+          {events.map((event) => (
+            <Link
+              key={event.id}
+              href={`/events/${event.id}`}
+              className={`${event.id === 1 ? "lg:col-span-2" : "col-span-1"}`}
+            >
+              <CardEvent data={event} />
+            </Link>
+          ))}
           {eventsData.map((event) => (
-            <CardEvent key={event.id} data={event} />
+            <Link key={event.id} href={`/events/${event.id}`}>
+              <CardEvent data={event} />
+            </Link>
           ))}
         </div>
       </div>
