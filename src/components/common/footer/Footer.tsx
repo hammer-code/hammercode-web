@@ -53,9 +53,9 @@ const Footer = () => {
             <div className="flex flex-col md:items-start items-center gap-3">
               <h3 className="text-lg text-hmc-primary font-semibold">{t("contact.title")}</h3>
               <div className="flex flex-col md:items-start items-center gap-1">
-                {contact.data.map((data) => (
+                {contact.data.map((data, index) => (
                   <Button
-                    key={data.navigate_url}
+                    key={index}
                     variant="link"
                     asChild
                     className="!h-auto !p-0 md:text-sm justify-start text-xs font-normal text-slate-600 dark:text-slate-400 hover:opacity-80"
